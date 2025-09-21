@@ -63,7 +63,7 @@ const StylistSpotlight = () => {
         {/* Section Header */}
         <div className="text-center mb-6 lg:mb-12">
           <h2 className="font-heading text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-2">
-            Meet Our Amazing Team
+            Meet Our Core Team
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Our expert team brings creativity, skill, and years of experience to
