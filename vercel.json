@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "lcs-admin/package.json",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["lcs-admin/**"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/lcs-admin/api/$1"
+    },
+    {
+      "src": "/admin/(.*)",
+      "dest": "/lcs-admin/admin/$1"
+    },
+    {
+      "src": "/admin",
+      "dest": "/lcs-admin/admin"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "DATABASE_URL": "@database_url",
+    "JWT_SECRET": "@jwt_secret",
+    "ADMIN_JWT_SECRET": "@admin_jwt_secret",
+    "APP_KEYS": "@app_keys"
+  }
+}
