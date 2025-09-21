@@ -6,9 +6,15 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noEmit": true
+    "noEmit": true,
+    "types": ["node"],
+    "allowJs": true,
+    "checkJs": false,
+    "resolveJsonModule": true
   },
-  "include": ["vite.config.mjs"]
+  "include": [
+    "vite.config.js"
+  ]
 }
 
 

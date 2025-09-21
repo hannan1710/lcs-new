@@ -3,7 +3,17 @@
 
 # Specific route redirects for better SEO
 /homepage    /index.html   200
+/home        /index.html   200
+/services-catalog    /index.html   200
 /services    /index.html   200
+/gallery-portfolio    /index.html   200
 /gallery     /index.html   200
+/contact-location    /index.html   200
 /contact     /index.html   200
+/about-us    /index.html   200
 /about       /index.html   200
+/appointment-booking    /index.html   200
+/login    /index.html   200
+/register    /index.html   200
+/dashboard    /index.html   200
+/admin    /index.html   200
