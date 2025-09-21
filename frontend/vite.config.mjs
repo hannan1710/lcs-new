@@ -1,6 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
+import { copyFileSync, existsSync } from "fs";
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,7 +18,23 @@ export default defineConfig({
       }
     }
   },
-  plugins: [tsconfigPaths(), react()],
+  plugins: [
+    tsconfigPaths(), 
+    react(),
+    // Plugin to copy _redirects file to dist
+    {
+      name: 'copy-redirects',
+      writeBundle() {
+        const redirectsPath = resolve(__dirname, 'public', '_redirects');
+        const distPath = resolve(__dirname, 'dist', '_redirects');
+        
+        if (existsSync(redirectsPath)) {
+          copyFileSync(redirectsPath, distPath);
+          console.log('✅ _redirects file copied to dist/');
+        }
+      }
+    }
+  ],
   server: {
     port: "4028",
     host: "0.0.0.0",

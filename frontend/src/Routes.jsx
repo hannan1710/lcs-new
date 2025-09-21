@@ -25,12 +25,17 @@ const Routes = () => {
         {/* Main Pages */}
         <Route path="/" element={<Homepage />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/home" element={<Homepage />} />
         <Route path="/appointment-booking" element={<AppointmentBooking />} />
         <Route path="/services-catalog" element={<ServicesCatalog />} />
+        <Route path="/services" element={<ServicesCatalog />} />
         {/** Team page removed */}
         <Route path="/gallery-portfolio" element={<GalleryPortfolio />} />
+        <Route path="/gallery" element={<GalleryPortfolio />} />
         <Route path="/contact-location" element={<ContactLocationPage />} />
+        <Route path="/contact" element={<ContactLocationPage />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/about" element={<AboutUs />} />
         
         {/* Authentication */}
         <Route path="/login" element={<Login />} />
