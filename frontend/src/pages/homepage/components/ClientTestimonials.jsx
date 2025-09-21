@@ -82,7 +82,7 @@ const ClientTestimonials = () => {
       rating: 5,
       image:
         "https://lh3.googleusercontent.com/a-/ALV-UjXV9z8y7x6w5v4u3t2s1r0q9p8o7n6m5l4k3j2i1h0g9f8e7d6c5b4a3a2-w60-h60-p-c0x00000000-rp-mo-br100",
-      testimonial: `I got my hair coloured by Hashim. He is a genius! The colour turned out exactly as I wanted.`,
+      testimonial: `I got my hair coloured by Shawaz. He is a genius! The colour turned out exactly as I wanted.`,
       service: "Hair Colouring",
       date: "Feb 2024",
     },
@@ -219,7 +219,7 @@ const ClientTestimonials = () => {
       name: "Brijraj Singh Bhati",
       rating: 5,
       image: "http://googleusercontent.com/profile/picture/23",
-      testimonial: `Perfect Salon in galleria, Afsan really good at what he does. 5 stars`,
+      testimonial: `Perfect Salon in galleria, Afsan really good at what he does deserves a 5 stars`,
       service: "Salon Services",
       date: "Oct 2024",
     },
@@ -256,10 +256,10 @@ const ClientTestimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-5">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-2">
-            What Our Clients Say
+          Trusted by Clients 
           </h2>
           <p className="text-sm lg:text-base text-muted-foreground max-w-xl mx-auto">
-            Hear from our satisfied clients who experienced the La Coiffure difference.
+              Authentic Google reviews about La Coiffure Salon.
           </p>
         </div>
         

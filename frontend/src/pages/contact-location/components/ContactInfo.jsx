@@ -13,7 +13,7 @@ const ContactInfo = () => {
     {
       icon: 'Mail',
       title: 'Email Us',
-      content: 'thane@lacoiffure.com\npowai@lacoiffure.com',
+      content: 'info@lacoiffuresalons.com',
       action: 'Send Email'
     },
     {
@@ -37,7 +37,7 @@ const ContactInfo = () => {
         window.location.href = 'tel:+919967002481';
         break;
       case 'Email Us':
-        window.location.href = 'mailto:thane@lacoiffure.com';
+        window.location.href = 'mailto:info@lacoiffuresalons.com';
         break;
       case 'Business Hours':
         window.location.href = '/appointment-booking';

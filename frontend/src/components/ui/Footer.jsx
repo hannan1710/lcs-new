@@ -12,7 +12,7 @@ const Footer = () => {
       address:
         "Shop no. 11&12, Saraswati school, Anand Nagar, Thane West, Thane, Maharashtra 400615",
       phone: "+91 99670 02481",
-      email: "thane@lacoiffure.com",
+      email: "info@lacoiffuresalons.com",
       hours: "Mon-Sat: 9AM-8PM, Sun: 10AM-6PM",
     },
     {
@@ -20,7 +20,7 @@ const Footer = () => {
       address:
         "SN 161&162 floor 1st, galleriya, La Coiffure Salon - Best Salon in Powai Hiranandani, Galleria, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076",
       phone: "+91 74000 68615",
-      email: "powai@lacoiffure.com",
+      email: "info@lacoiffuresalons.com",
       hours: "Mon-Sat: 9AM-8PM, Sun: 10AM-6PM",
     },
   ];
@@ -157,7 +157,7 @@ const Footer = () => {
               <p>Thane & Powai Locations</p>
               <div className="pt-2">
                 <p className="font-medium text-white">General Inquiries</p>
-                <p>info@lacoiffure.com</p>
+                <p>info@lacoiffuresalons.com</p>
               </div>
             </div>
           </div>

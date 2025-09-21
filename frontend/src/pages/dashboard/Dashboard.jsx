@@ -11,7 +11,7 @@ const Dashboard = () => {
   // Mock user data
   const user = {
     name: 'Sarah Johnson',
-    email: 'sarah.johnson@email.com',
+    email: 'info@lacoiffuresalons.com',
     phone: '(555) 123-4567',
     loyaltyPoints: 1250,
     memberSince: '2023-03-15',

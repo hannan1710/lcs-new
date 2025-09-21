@@ -120,7 +120,7 @@ class FileAdmin {
       ],
       contact: {
         phone: "+91-9876543210",
-        email: "info@lacoiffuresalons.in",
+        email: "info@lacoiffuresalons.com",
         addresses: [
           {
             location: "Thane",

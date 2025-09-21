@@ -58,8 +58,8 @@ ${bookingData.notes ? `\nNotes: ${bookingData.notes}` : ''}`,
       contact_method: bookingData.contactMethod === 'whatsapp' ? 'WhatsApp' : 'Phone Call',
       notes: bookingData.notes || 'No additional notes',
       salon_name: 'La Coiffure Salon',
-      salon_email: 'info@lacoiffuresalons.in',
-      to_email: 'lacoiffuremails@gmail.com',
+      salon_email: 'info@lacoiffuresalons.com',
+      to_email: 'info@lacoiffuresalons.com',
       reply_to: bookingData.phone,
     };
 
@@ -105,7 +105,7 @@ export const sendCustomerConfirmation = async (bookingData) => {
       contact_method: bookingData.contactMethod === 'whatsapp' ? 'WhatsApp' : 'Phone Call',
       salon_name: 'La Coiffure Salon',
       salon_phone: branchPhone,
-      salon_email: 'info@lacoiffuresalons.in',
+      salon_email: 'info@lacoiffuresalons.com',
     };
 
     // You can create a separate template for customer confirmation

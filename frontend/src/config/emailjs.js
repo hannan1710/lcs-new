@@ -16,8 +16,8 @@ export const EMAILJS_CONFIG = {
   
   // Email recipients
   RECIPIENTS: {
-    SALON_EMAIL: 'info@lacoiffuresalons.in', // Your salon email
-    ADMIN_EMAIL: 'admin@lacoiffuresalons.in', // Admin email (optional)
+    SALON_EMAIL: 'info@lacoiffuresalons.com', // Your salon email
+    ADMIN_EMAIL: 'info@lacoiffuresalons.com', // Admin email (optional)
   }
 };
 
