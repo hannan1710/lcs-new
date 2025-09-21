@@ -50,7 +50,7 @@ const SingleStepBooking = () => {
     {
       id: 'powai',
       name: 'Powai',
-      address: 'Hiranandani Galleria',
+      address: 'Galleria',
       phone: '+91 74000 68615',
       whatsapp: '+91 74000 68615',
       mapLink: 'https://maps.app.goo.gl/yourpowaimap',
@@ -512,7 +512,7 @@ const SingleStepBooking = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-20 pb-16">
-        <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
+        <div className="container mx-auto px-6 lg:px-6 max-w-4xl">
           {/* Header */}
           <div className="text-center mb-8">
             <h1 className="text-3xl lg:text-4xl font-heading font-bold text-foreground mb-4">
@@ -531,24 +531,24 @@ const SingleStepBooking = () => {
                 <Icon name="MapPin" size={28} className="mr-3" />
                 Select Branch
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 {branches.map((branch) => (
                   <div
                     key={branch.id}
-                    className={`border-2 rounded-lg p-4 cursor-pointer transition-all hover:shadow-lg hover:shadow-yellow-500/20 ${
+                    className={`border-2 rounded-lg p-3 cursor-pointer transition-all hover:shadow-lg hover:shadow-yellow-500/20 ${
                       formData.branch === branch.id
                         ? 'border-accent bg-accent/10 shadow-lg shadow-yellow-500/30'
                         : 'border-border hover:border-accent/50'
                     }`}
                     onClick={() => handleInputChange('branch', branch.id)}
                   >
-                    <div className="flex items-center space-x-3">
-                      <div className="flex-1">
-                            <h3 className="text-lg font-semibold flex items-center mb-2">
-                              <Icon name="MapPin" size={18} className="mr-2 text-accent" />
-                              {branch.name}
-                            </h3>
-                            <p className="text-base text-muted-foreground">{branch.address}</p>
+                    <div className="flex items-center space-x-2">
+                      <Icon name="MapPin" size={16} className="text-accent flex-shrink-0" />
+                      <div className="flex flex-col text-left">
+                        <h3 className="text-lg font-bold">
+                          {branch.name}
+                        </h3>
+                        <p className="text-xs text-muted-foreground">{branch.address}</p>
                       </div>
                     </div>
                   </div>
@@ -559,7 +559,7 @@ const SingleStepBooking = () => {
                   {/* Branch Contact Options */}
                   {formData.branch && (
                     <div className="mt-4 p-4 bg-accent/10 border border-accent/20 rounded-lg">
-                      <h3 className="text-base font-medium text-foreground mb-3">Preferred to call directly</h3>
+                      <h3 className="text-base font-medium text-foreground mb-3"> Call or WhatsApp directly</h3>
                       <div className="flex items-center justify-between">
                         <div>
                           <p className="text-base font-medium text-foreground">{selectedBranch?.name}</p>
@@ -742,7 +742,7 @@ const SingleStepBooking = () => {
                     </div>
                     <div>
                       <h3 className="font-medium">WhatsApp</h3>
-                      <p className="text-sm text-muted-foreground">Instant confirmation via WhatsApp</p>
+                      <p className="text-sm text-muted-foreground">Confirmation Through WhatsApp</p>
                     </div>
                   </div>
                 </div>

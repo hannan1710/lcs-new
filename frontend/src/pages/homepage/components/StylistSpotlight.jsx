@@ -12,7 +12,7 @@ const StylistSpotlight = () => {
         name: "Imran Salmani",
         title: "Founder",
         experience: "8 years",
-        image: "imran.png",
+        image: "/imran.png",
         bio:"Imran, Founder of La Coiffure Salon, has built the brand on a vision of luxury, innovation, and premium client experiences."
 
       },
@@ -22,14 +22,14 @@ const StylistSpotlight = () => {
         title: "Creative Director",
         experience: "6 years",
         image: "/nizam.jpg",
-        bio: "As Creative Director, Nizam leads with innovation, specializing in bold color transformations and personalized styles that reflect each client’s individuality."
+        bio: "As Creative Director, Nizam leads with innovation, specializing in bold color transformations and personalized styles that reflect each client's individuality."
       },
       {
         id: 3,
         name: "Shahista Salmani",
         title: "Senior Skin Expert",
         experience: "10 years",
-        image: "/shahi.jpg",
+        image: "/shahi.png",
         bio: "With a decade of experience, Shahista is a Senior Skin Expert renowned for luxury bridal makeovers. She blends traditional elegance with modern artistry for flawless, radiant results."
       },
       {
@@ -38,7 +38,7 @@ const StylistSpotlight = () => {
         title: "Marketing Head & Website Developer",
         experience: "7 years",
         image: "/hannan.jpg",
-        bio: "Hannan drives the salon’s digital presence and marketing strategy while developing its modern website, ensuring clients enjoy a seamless and premium brand experience."
+        bio: "Hannan drives the salon's digital presence and marketing strategy while developing its modern website, ensuring clients enjoy a seamless and premium brand experience."
       
     }
   ];

@@ -35,7 +35,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-30 container mx-auto px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto pt-8 sm:pt-12 lg:pt-16">
+        <div className="max-w-4xl mx-auto pt-4 sm:pt-6 lg:pt-8">
 
 
           {/* Main Heading */}
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             La Coiffure Salon offers premium haircuts, color, skincare, and wellness services in Thane & Powai — crafted by expert stylists to reflect your unique style.
           </p>
 

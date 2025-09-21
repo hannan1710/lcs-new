@@ -94,7 +94,7 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-xl text-[#B8860B]">
+                <h3 className="font-heading font-bold text-xl text-primary">
                   La Coiffure Salon 
                 </h3>
                

@@ -79,28 +79,28 @@ export const galleryData = [
     id: 16,
     image: '/16.jpg',
     alt: 'Complete beauty transformation at La Coiffure Salon Thane Powai - Expert beauty services'
-  },
-  // Add more gallery images here - they will appear in both homepage and gallery page
-  {
-    id: 17,
-    image: '/17.jpg',
-    alt: 'Elegant bridal hair styling at La Coiffure Salon Thane Powai - Premium wedding beauty'
-  },
-  {
-    id: 18,
-    image: '/18.jpg',
-    alt: 'Professional men\'s grooming services at La Coiffure Salon Thane Powai - Expert styling and care'
-  },
-  {
-    id: 19,
-    image: '/19.jpg',
-    alt: 'Professional hair extension services at La Coiffure Salon Thane Powai - Premium hair treatments'
-  },
-  {
-    id: 20,
-    image: '/20.jpg',
-    alt: 'Smoothing keratin treatment at La Coiffure Salon Thane Powai - Professional hair smoothing'
   }
+  // Add more gallery images here - they will appear in both homepage and gallery page
+  // {
+  //   id: 17,
+  //   image: '/17.jpg',
+  //   alt: 'Elegant bridal hair styling at La Coiffure Salon Thane Powai - Premium wedding beauty'
+  // },
+  // {
+  //   id: 18,
+  //   image: '/18.jpg',
+  //   alt: 'Professional men\'s grooming services at La Coiffure Salon Thane Powai - Expert styling and care'
+  // },
+  // {
+  //   id: 19,
+  //   image: '/19.jpg',
+  //   alt: 'Professional hair extension services at La Coiffure Salon Thane Powai - Premium hair treatments'
+  // },
+  // {
+  //   id: 20,
+  //   image: '/20.jpg',
+  //   alt: 'Smoothing keratin treatment at La Coiffure Salon Thane Powai - Professional hair smoothing'
+  // }
 ];
 
 // Function to get images for homepage (first 8 images)
