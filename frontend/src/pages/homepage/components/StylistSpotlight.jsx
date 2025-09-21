@@ -43,6 +43,7 @@ const StylistSpotlight = () => {
     }
   ];
 
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentStylist((prev) => (prev + 1) % stylists?.length);
@@ -80,6 +81,7 @@ const StylistSpotlight = () => {
                  src={currentStylistData?.image}
                  alt={currentStylistData?.name}
                  className="w-full h-full object-cover transition-opacity duration-500 ease-in-out"
+                 loading={currentStylist === 0 ? "eager" : "lazy"}
                />
                
                {/* Dark overlay for better text readability */}

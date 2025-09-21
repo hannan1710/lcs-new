@@ -59,7 +59,7 @@ const SalonGallery = () => {
                 animation: isTransitioning ? 'none' : 'fadeInUp 0.8s ease-out forwards'
               }}
             >
-              <div className={`relative h-40 sm:h-48 md:h-52 lg:h-44`}>
+              <div className={`relative h-40 sm:h-48 md:h-52 lg:h-72`}>
                 <Image
                   src={image?.src}
                   alt={image?.alt}

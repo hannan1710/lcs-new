@@ -10,18 +10,18 @@ const Footer = () => {
     {
       name: "La Coiffure Salon, Thane",
       address:
-        "Shop no. 11&12, Saraswati school, Anand Nagar, Thane West, Thane, Maharashtra 400615",
+        "La Coiffure Salon, Thane,Shop no. 11&12, Saraswati school, Anand Nagar, Thane West, Thane, Maharashtra 400615",
       phone: "+91 99670 02481",
       email: "info@lacoiffuresalons.com",
-      hours: "Mon-Sat: 9AM-8PM, Sun: 10AM-6PM",
+      hours: "Mon-Sun: 10AM-9PM",
     },
     {
       name: "La Coiffure Salon, Powai",
       address:
-        "SN 161&162 floor 1st, galleriya, La Coiffure Salon - Best Salon in Powai Hiranandani, Galleria, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076",
+        " La Coiffure Salon,SN 161&162 floor 1st, Galleria, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076",
       phone: "+91 74000 68615",
       email: "info@lacoiffuresalons.com",
-      hours: "Mon-Sat: 9AM-8PM, Sun: 10AM-6PM",
+      hours: "Mon-Sun: 10AM-9PM",
     },
   ];
 
@@ -164,15 +164,15 @@ const Footer = () => {
         </div>
 
         {/* Salon Locations */}
-        <div className="border-t border-white/20 pt-8 mb-8">
-          <h4 className="font-semibold mb-6 text-lg text-center text-white">
+        <div className="border-t border-white/20 pt-4 sm:pt-8 mb-4 sm:mb-8">
+          <h4 className="font-semibold mb-4 sm:mb-6 text-lg text-center text-white">
             Our Stores
           </h4>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             {salonLocations.map((location, index) => (
               <div
                 key={index}
-                className="bg-white/5 rounded-lg p-4 sm:p-6 border border-white/10"
+                className="bg-white/5 rounded-lg p-3 sm:p-4 lg:p-6 border border-white/10"
               >
                 <h5 className="font-semibold text-lg mb-3 text-accent">
                   {location.name}

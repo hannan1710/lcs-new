@@ -234,6 +234,7 @@ const ClientTestimonials = () => {
     },
   ];
 
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -266,17 +267,17 @@ const ClientTestimonials = () => {
         {/* Testimonial Card with External Navigation */}
         <div className="max-w-4xl mx-auto relative">
           {/* Navigation Arrows - Outside (Both Mobile and Desktop) */}
-          <div className="flex items-center justify-between absolute inset-0 -translate-y-1/2 top-1/2 pointer-events-none">
+          <div className="flex items-center justify-between absolute inset-0 -translate-y-1/2 top-1/2 pointer-events-none z-10">
             <button
               onClick={prevTestimonial}
-              className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gray-500/15 text-white flex items-center justify-center hover:bg-gray-500/25 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 pointer-events-auto"
+              className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gray-500/15 text-white flex items-center justify-center hover:bg-gray-500/25 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 pointer-events-auto z-20"
             >
               <Icon name="ChevronLeft" size={20} className="lg:w-6 lg:h-6" />
             </button>
             
             <button
               onClick={nextTestimonial}
-              className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gray-500/15 text-white flex items-center justify-center hover:bg-gray-500/25 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 pointer-events-auto"
+              className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gray-500/15 text-white flex items-center justify-center hover:bg-gray-500/25 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 pointer-events-auto z-20"
             >
               <Icon name="ChevronRight" size={20} className="lg:w-6 lg:h-6" />
             </button>
@@ -292,6 +293,7 @@ const ClientTestimonials = () => {
                     src={currentData?.image}
                     alt={currentData?.name}
                     className="w-full h-full object-cover"
+                    loading={currentTestimonial === 0 ? "eager" : "lazy"}
                   />
                 </div>
                 <div className="flex flex-col">
