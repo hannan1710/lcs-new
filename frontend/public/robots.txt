@@ -1,3 +1,37 @@
 # https://www.robotstxt.org/robotstxt.html
+# La Coiffure Salon - Professional Hair & Beauty Services
+# Thane & Powai, Maharashtra, India
+
+# Allow all search engines to crawl
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://lacoiffuresalons.com/sitemap.xml
+
+# Essential Search Engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Social Media Crawlers (for link previews)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
