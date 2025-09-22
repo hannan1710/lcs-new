@@ -81,7 +81,8 @@ const StylistSpotlight = () => {
                  src={currentStylistData?.image}
                  alt={currentStylistData?.name}
                  className="w-full h-full object-cover transition-opacity duration-500 ease-in-out"
-                 loading={currentStylist === 0 ? "eager" : "lazy"}
+                 priority={currentStylist === 0} // Priority load first stylist image
+                 sizes="(max-width: 768px) 100vw, 50vw"
                />
                
                {/* Dark overlay for better text readability */}

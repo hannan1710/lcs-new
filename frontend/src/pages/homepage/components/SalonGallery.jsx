@@ -4,6 +4,7 @@ import Image from "../../../components/AppImage";
 import Button from "../../../components/ui/Button";
 import Icon from "../../../components/AppIcon";
 import { getSlideshowImages } from "../../../data/galleryData";
+import { preloadImages } from "../../../utils/imageOptimization";
 
 const SalonGallery = () => {
   const [displayedImages, setDisplayedImages] = useState([]);
@@ -13,6 +14,10 @@ const SalonGallery = () => {
   useEffect(() => {
     const images = getSlideshowImages();
     setDisplayedImages(images.slice(0, 8)); // Show 8 images for desktop 4x2 grid
+    
+    // Preload next set of images for smoother transitions
+    const nextImages = getSlideshowImages();
+    preloadImages(nextImages.slice(0, 4).map(img => img.src));
   }, []);
 
   // Change images every 8 seconds with smooth transition
@@ -64,6 +69,8 @@ const SalonGallery = () => {
                   src={image?.src}
                   alt={image?.alt}
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                  priority={index < 4} // Priority load first 4 images
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 20vw"
                 />
 
                 {/* Subtle Overlay */}
