@@ -6,6 +6,8 @@ const CriticalResourcePreloader = () => {
     // Critical images that should be preloaded
     const criticalImages = [
       '/la-coiffure-salon-logo.png',
+      '/la-coiffure-salon-thane-location.png',
+      '/la-coiffure-salon-powai-location.png',
       '/mens-haircut-styling-services.png',
       '/womens-haircut-styling-services.png',
       '/hair-coloring-highlights-services.png',
