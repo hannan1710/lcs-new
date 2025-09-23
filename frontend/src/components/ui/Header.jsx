@@ -124,8 +124,10 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMobileMenu}
-              className="lg:hidden p-3 rounded-lg hover:bg-muted transition-luxury touch-manipulation"
+              className="lg:hidden p-3 rounded-lg hover:bg-muted transition-luxury touch-manipulation min-h-[48px] min-w-[48px] flex items-center justify-center"
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               <Icon name={isMobileMenuOpen ? "X" : "Menu"} size={24} />
             </button>
@@ -133,18 +135,25 @@ const Header = () => {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="lg:hidden border-t border-border py-4 mobile-menu-container">
+            <div 
+              id="mobile-menu"
+              className="lg:hidden border-t border-border py-4 mobile-menu-container"
+              role="menu"
+              aria-label="Mobile navigation menu"
+            >
               <nav className="space-y-2">
                 {navigationItems?.map((item) => (
                   <Link
                     key={item?.path}
                     to={item?.path}
-                    className={`flex items-center space-x-3 px-4 py-4 rounded-lg transition-luxury touch-manipulation ${
+                    className={`flex items-center space-x-3 px-4 py-4 rounded-lg transition-luxury touch-manipulation min-h-[48px] ${
                       isActivePath(item?.path)
                         ? "bg-accent/10 text-accent"
                         : "text-foreground hover:bg-muted"
                     }`}
                     onClick={closeMobileMenu}
+                    role="menuitem"
+                    aria-label={`Navigate to ${item?.label} page`}
                   >
                     <Icon name={item?.icon} size={20} />
                     <span>{item?.label}</span>

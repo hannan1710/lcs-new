@@ -49,11 +49,11 @@ const GalleryPortfolio = () => {
           {/* Gallery Grid */}
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12">
             {galleryData.map((item, index) => (
-              <div
+              <button
                 key={item.id}
-                className="group relative overflow-hidden rounded-lg cursor-pointer"
+                className="group relative overflow-hidden rounded-lg cursor-pointer min-h-[48px] min-w-[48px] w-full"
                 onClick={() => openLightbox(index)}
-                title="Click to view full photo"
+                aria-label={`View full size image: ${item.alt}`}
               >
                 <div className="aspect-[4/5] sm:aspect-[3/4] overflow-hidden">
                   <Image
@@ -71,7 +71,7 @@ const GalleryPortfolio = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
 
@@ -86,7 +86,8 @@ const GalleryPortfolio = () => {
             </p>
             <button
               onClick={() => window.location.href = '/appointment-booking'}
-              className="group relative inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-accent via-accent to-yellow-500 text-accent-foreground font-bold text-lg py-4 px-8 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/40 hover:scale-105 active:scale-95"
+              className="group relative inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-accent via-accent to-yellow-500 text-accent-foreground font-bold text-lg py-4 px-8 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/40 hover:scale-105 active:scale-95 min-h-[48px] min-w-[48px]"
+              aria-label="Book appointment to create your own transformation"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-accent to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative flex items-center space-x-3">

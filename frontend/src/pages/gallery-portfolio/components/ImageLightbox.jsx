@@ -41,16 +41,16 @@ const ImageLightbox = ({
   const currentImage = images?.[currentIndex];
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex flex-col">
       {/* Header */}
       <div className="absolute top-0 left-0 right-0 z-10">
-        <div className="flex items-center justify-end p-1">
+        <div className="flex items-center justify-end p-4">
           <button
             onClick={(e) => {
               e.stopPropagation();
               onClose();
             }}
-            className="p-1 rounded-full bg-black/20 hover:bg-black/40 transition-luxury"
+            className="p-3 rounded-full bg-black/20 hover:bg-black/40 transition-luxury min-h-[48px] min-w-[48px] flex items-center justify-center"
             aria-label="Close lightbox"
           >
             <Icon name="X" size={20} color="white" />
@@ -65,7 +65,7 @@ const ImageLightbox = ({
               e.stopPropagation();
               onPrevious();
             }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-black/20 hover:bg-black/40 transition-luxury"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-black/20 hover:bg-black/40 transition-luxury min-h-[48px] min-w-[48px] flex items-center justify-center"
             aria-label="Previous image"
           >
             <Icon name="ChevronLeft" size={24} color="white" />
@@ -75,7 +75,7 @@ const ImageLightbox = ({
               e.stopPropagation();
               onNext();
             }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-black/20 hover:bg-black/40 transition-luxury"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-black/20 hover:bg-black/40 transition-luxury min-h-[48px] min-w-[48px] flex items-center justify-center"
             aria-label="Next image"
           >
             <Icon name="ChevronRight" size={24} color="white" />
@@ -84,17 +84,17 @@ const ImageLightbox = ({
       )}
       {/* Main Image */}
       <div 
-        className="flex items-center justify-center h-full cursor-pointer"
+        className="flex items-center justify-center h-full cursor-pointer p-4 sm:p-8"
         onClick={onClose}
       >
         <div 
-          className="relative max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-full w-full"
+          className="relative max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl max-h-[80vh] w-full flex items-center justify-center"
           onClick={(e) => e.stopPropagation()}
         >
           <Image
             src={currentImage?.src}
             alt={currentImage?.alt}
-            className="w-full h-full object-contain rounded-lg"
+            className="max-w-full max-h-full object-contain rounded-lg"
           />
           
           {/* Before/After Indicator */}

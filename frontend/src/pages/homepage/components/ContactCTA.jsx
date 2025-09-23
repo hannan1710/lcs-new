@@ -58,7 +58,10 @@ const ContactCTA = () => {
             href="#appointment-booking"
             onClick={(e) => handleSmoothScroll(e, "#appointment-booking")}
           >
-            <button className="group relative inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-accent via-accent to-yellow-500 text-accent-foreground font-bold text-lg py-4 px-8 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/40 hover:scale-105 active:scale-95">
+            <button 
+              className="group relative inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-accent via-accent to-yellow-500 text-accent-foreground font-bold text-lg py-4 px-8 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/40 hover:scale-105 active:scale-95 min-h-[48px] min-w-[48px]"
+              aria-label="Book appointment at La Coiffure Salon"
+            >
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-accent to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative flex items-center space-x-3">
                 <Icon name="Calendar" size={20} className="group-hover:animate-bounce" />
@@ -90,9 +93,9 @@ const ContactCTA = () => {
               <div className="bg-accent/10 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mx-auto mb-2">
                 <Icon name={info.icon} size={22} className="text-accent" />
               </div>
-              <h3 className="font-heading text-base sm:text-lg font-semibold mb-1">
+              <h2 className="font-heading text-base sm:text-lg font-semibold mb-1">
                 {info.title}
-              </h3>
+              </h2>
               <p className="text-sm sm:text-base text-primary-foreground/80 mb-2 whitespace-pre-line">
                 {info.content}
               </p>

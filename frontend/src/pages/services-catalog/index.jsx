@@ -241,9 +241,9 @@ const ServicesCatalog = () => {
 
                 {/* Category Content */}
                 <div className="p-4 flex flex-col flex-grow">
-                  <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
+                  <h2 className="font-heading font-semibold text-xl text-foreground mb-2">
                     {category.name}
-                  </h3>
+                  </h2>
                   <p className="text-muted-foreground text-sm mb-4 flex-grow">
                     {category.description}
                   </p>
@@ -256,7 +256,8 @@ const ServicesCatalog = () => {
                   {/* Book Now Button - Always at bottom */}
                   <button
                     onClick={handleBookNow}
-                    className="group relative w-full bg-gradient-to-r from-accent via-accent to-yellow-500 text-accent-foreground font-semibold py-3 px-4 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/30 hover:scale-105 active:scale-95 mt-auto"
+                    className="group relative w-full bg-gradient-to-r from-accent via-accent to-yellow-500 text-accent-foreground font-semibold py-3 px-4 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/30 hover:scale-105 active:scale-95 mt-auto min-h-[48px] min-w-[48px]"
+                    aria-label={`Book appointment for ${category.name}`}
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-accent to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="relative flex items-center justify-center space-x-2">
