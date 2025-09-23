@@ -5,13 +5,15 @@ const CriticalResourcePreloader = () => {
   useEffect(() => {
     // Critical images that should be preloaded
     const criticalImages = [
+      '/la-coiffure-salon-logo.png',
+      '/mens-haircut-styling-services.png',
+      '/womens-haircut-styling-services.png',
+      '/hair-coloring-highlights-services.png',
+      '/professional-hair-highlighting-services.png',
+      '/hair-spa-treatments-services.png',
       '/la-coiffure-powai-ash-brown-highlights.jpg',
       '/la-coiffure-powai-grey-bob-haircut.jpg',
-      '/la-coiffure-thane-balayage-highlights-curly-hair.jpg',
-      '/la-coiffure-thane-men-haircut-and-beard.jpg',
-      '/logo.jpg',
-      '/la-coiffure-salon-logo.png',
-      '/assets/images/logo.jpg'
+      '/logo.jpg'
     ];
 
     // Preload critical images

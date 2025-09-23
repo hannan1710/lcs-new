@@ -27,8 +27,8 @@ function Image({
         }
       },
       {
-        rootMargin: '50px', // Start loading 50px before image comes into view
-        threshold: 0.1
+        rootMargin: '100px', // Start loading 100px before image comes into view
+        threshold: 0.01
       }
     );
 
@@ -58,25 +58,11 @@ function Image({
 
   return (
     <div ref={imgRef} className="relative">
-      {/* Loading skeleton with better animation */}
+      {/* Simple loading placeholder */}
       {isLoading && (
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-pulse rounded flex items-center justify-center">
-          <div className="w-8 h-8 border-2 border-gray-300 border-t-primary rounded-full animate-spin"></div>
+        <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
+          <div className="w-6 h-6 border-2 border-gray-300 border-t-primary rounded-full animate-spin"></div>
         </div>
-      )}
-      
-      {/* Blur placeholder */}
-      {isLoading && !hasError && (
-        <div 
-          className="absolute inset-0 bg-gray-200 blur-sm scale-110"
-          style={{
-            backgroundImage: `url(${src})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'blur(10px)',
-            transform: 'scale(1.1)'
-          }}
-        />
       )}
       
       {/* Actual image */}
@@ -84,7 +70,7 @@ function Image({
         <img
           src={getOptimizedSrc(src)}
           alt={alt}
-          className={`${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-500 ease-out`}
+          className={`${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-200 ease-out`}
           loading={priority ? "eager" : "lazy"}
           decoding="async"
           onLoad={handleLoad}
