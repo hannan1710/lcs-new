@@ -15,7 +15,7 @@ const ServicesCatalog = () => {
     {
       id: 'mens-haircut-styling',
       name: 'Men\'s Haircut & Styling',
-      description: 'Expert grooming and precision cuts designed to enhance masculine style and personality.',
+      description: 'Expert grooming and precision cuts for masculine style.',
       image: '/mens-haircut-styling-services.png',
       alt: 'Professional men\'s haircut at La Coiffure Salon',
       seoCaption: 'Sharp, stylish men\'s haircuts tailored to your look.',
@@ -24,7 +24,7 @@ const ServicesCatalog = () => {
     {
       id: 'womens-haircut-styling',
       name: 'Women\'s Haircut & Styling',
-      description: 'Customized women\'s haircuts crafted with elegance and attention to detail for every face shape and trend.',
+      description: 'Customized haircuts crafted with elegance for every face shape.',
       image: '/womens-haircut-styling-services.png',
       alt: 'Luxury women\'s haircut by expert stylists',
       seoCaption: 'Transform your style with precision women\'s haircuts.',
@@ -33,7 +33,7 @@ const ServicesCatalog = () => {
     {
       id: 'hair-coloring-highlights',
       name: 'Hair Coloring & Highlights',
-      description: 'Premium hair coloring services offering rich tones, vibrant shades, and long-lasting brilliance.',
+      description: 'Premium hair coloring with rich tones and vibrant shades.',
       image: '/hair-coloring-highlights-services.png',
       alt: 'Premium hair coloring services in Mumbai salon',
       seoCaption: 'Vibrant, long-lasting hair color crafted by specialists.',
@@ -42,7 +42,7 @@ const ServicesCatalog = () => {
     {
       id: 'professional-highlighting',
       name: 'Professional Hair Highlighting',
-      description: 'Natural-looking highlights and balayage techniques to add depth, shine, and dimension to hair.',
+      description: 'Natural highlights and balayage for depth and shine.',
       image: '/professional-hair-highlighting-services.png',
       alt: 'Natural hair highlights by salon experts',
       seoCaption: 'Add dimension with flawless highlights and balayage.',
@@ -51,7 +51,7 @@ const ServicesCatalog = () => {
     {
       id: 'hair-spa-treatments',
       name: 'Hair Spa & Treatments',
-      description: 'Revitalizing hair spa and advanced treatments that restore health, strength, and natural shine.',
+      description: 'Revitalizing hair spa treatments for health and shine.',
       image: '/hair-spa-treatments-services.png',
       alt: 'Hair spa and treatment for healthy shine',
       seoCaption: 'Rejuvenating spa therapies for hair and scalp health.',
@@ -60,7 +60,7 @@ const ServicesCatalog = () => {
     {
       id: 'hair-texturizing-styling',
       name: 'Hair Texturizing & Styling',
-      description: 'Professional smoothening, straightening, and volumizing services for perfectly styled textured hair.',
+      description: 'Professional smoothening and volumizing for styled hair.',
       image: '/hair-texturizing-styling-services.png',
       alt: 'Hair smoothening and texture services',
       seoCaption: 'Get silky smooth or voluminous textured hair.',
@@ -69,7 +69,7 @@ const ServicesCatalog = () => {
     {
       id: 'facial-treatments-skincare',
       name: 'Facial Treatments & Skincare',
-      description: 'Luxury facials that cleanse, hydrate, and rejuvenate skin for a youthful and radiant glow.',
+      description: 'Luxury facials for youthful and radiant skin.',
       image: '/facial-treatments-skincare-services.png',
       alt: 'Luxury facial treatments for glowing skin',
       seoCaption: 'Brighten and refresh your skin with premium facials.',
@@ -78,7 +78,7 @@ const ServicesCatalog = () => {
     {
       id: 'hair-cleanup-maintenance',
       name: 'Hair Cleanup & Maintenance',
-      description: 'Deep cleansing clean-ups to remove impurities, refresh skin, and restore natural clarity.',
+      description: 'Deep cleansing clean-ups for fresh, clear skin.',
       image: '/hair-cleanup-maintenance-services.png',
       alt: 'Skin clean-up service for clear complexion',
       seoCaption: 'Deep cleansing clean-ups for fresh, healthy skin.',
@@ -87,7 +87,7 @@ const ServicesCatalog = () => {
     {
       id: 'manicure-pedicure-services',
       name: 'Manicure & Pedicure Services',
-      description: 'Relaxing manicure and pedicure services for well-groomed, polished, and healthy hands and feet.',
+      description: 'Relaxing manicure and pedicure for polished hands and feet.',
       image: '/manicure-pedicure-services.png',
       alt: 'Luxury manicure and pedicure salon service',
       seoCaption: 'Pamper your hands and feet with expert mani-pedi.',
@@ -96,7 +96,7 @@ const ServicesCatalog = () => {
     {
       id: 'skincare-beauty-treatments',
       name: 'Skincare & Beauty Treatments',
-      description: 'Comprehensive skincare solutions tailored to address individual needs for flawless, glowing skin.',
+      description: 'Comprehensive skincare solutions for flawless skin.',
       image: '/skincare-beauty-treatments-services.png',
       alt: 'Advanced skin care treatments at salon',
       seoCaption: 'Personalized skin solutions for radiant beauty.',
@@ -105,7 +105,7 @@ const ServicesCatalog = () => {
     {
       id: 'hair-bleaching-polishing',
       name: 'Hair Bleaching & Polishing',
-      description: 'Effective bleach and polishing treatments to brighten skin tone and achieve smooth radiance.',
+      description: 'Effective bleach and polishing for smooth radiance.',
       image: '/hair-bleaching-polishing-services.png',
       alt: 'Skin bleach and body polishing service',
       seoCaption: 'Get smooth, even-toned skin with polishing treatments.',
@@ -114,7 +114,7 @@ const ServicesCatalog = () => {
     {
       id: 'hair-removal-waxing',
       name: 'Hair Removal & Waxing',
-      description: 'Safe and gentle waxing services for soft, smooth, and hair-free skin.',
+      description: 'Safe and gentle waxing for smooth skin.',
       image: '/hair-removal-waxing-services.png',
       alt: 'Professional waxing services at luxury salon',
       seoCaption: 'Gentle, precise waxing for silky smooth skin.',
@@ -123,7 +123,7 @@ const ServicesCatalog = () => {
     {
       id: 'nail-care-nail-art',
       name: 'Nail Care & Nail Art',
-      description: 'Creative nail art, extensions, and professional care for stylish, long-lasting nails.',
+      description: 'Creative nail art and extensions for stylish nails.',
       image: '/nail-care-nail-art-services.png',
       alt: 'Luxury nail art and extensions',
       seoCaption: 'Trendy nail designs and flawless finishing.',
@@ -132,7 +132,7 @@ const ServicesCatalog = () => {
     {
       id: 'professional-makeup-services',
       name: 'Professional Makeup Services',
-      description: 'Professional makeup artistry for bridal, party, and special occasions with flawless finishing.',
+      description: 'Professional makeup artistry for special occasions.',
       image: '/professional-makeup-services.png',
       alt: 'Professional bridal and party makeup',
       seoCaption: 'Glamorous makeup looks for every occasion.',
