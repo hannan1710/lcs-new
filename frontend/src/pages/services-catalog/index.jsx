@@ -5,6 +5,7 @@ import Footer from '../../components/ui/Footer';
 import Button from '../../components/ui/Button';
 import Icon from '../../components/AppIcon';
 import SEOHead from '../../components/SEOHead';
+import AppImage from '../../components/AppImage';
 
 const ServicesCatalog = () => {
   const navigate = useNavigate();
@@ -14,127 +15,127 @@ const ServicesCatalog = () => {
     {
       id: 'mens-haircut-styling',
       name: 'Men\'s Haircut & Styling',
-      description: 'Professional men\'s haircuts and styling in Thane and Powai',
+      description: 'Expert grooming and precision cuts designed to enhance masculine style and personality.',
       image: '/mens-haircut-styling-services.png',
-      alt: 'Professional men haircut and styling services at La Coiffure Salon Thane Powai - Expert barber cuts, beard trimming, and modern men grooming',
-      seoCaption: 'Expert men\'s haircuts, beard styling, and grooming services by professional barbers in Thane and Powai',
+      alt: 'Professional men\'s haircut at La Coiffure Salon',
+      seoCaption: 'Sharp, stylish men\'s haircuts tailored to your look.',
       icon: 'Scissors'
     },
     {
       id: 'womens-haircut-styling',
       name: 'Women\'s Haircut & Styling',
-      description: 'Expert women\'s haircuts and styling in Thane and Powai',
+      description: 'Customized women\'s haircuts crafted with elegance and attention to detail for every face shape and trend.',
       image: '/womens-haircut-styling-services.png',
-      alt: 'Professional women haircut and styling services at La Coiffure Salon Thane Powai - Expert cuts, layers, bobs, and modern hairstyles',
-      seoCaption: 'Expert women\'s haircuts, layers, bobs, and modern hairstyling by professional stylists in Thane and Powai',
+      alt: 'Luxury women\'s haircut by expert stylists',
+      seoCaption: 'Transform your style with precision women\'s haircuts.',
       icon: 'Scissors'
     },
     {
       id: 'hair-coloring-highlights',
       name: 'Hair Coloring & Highlights',
-      description: 'Hair coloring and highlights services in Thane and Powai',
+      description: 'Premium hair coloring services offering rich tones, vibrant shades, and long-lasting brilliance.',
       image: '/hair-coloring-highlights-services.png',
-      alt: 'Professional hair coloring and highlights services at La Coiffure Salon Thane Powai - Expert color treatments, balayage, ombre, and color correction',
-      seoCaption: 'Professional hair coloring, highlights, balayage, ombre, and color correction services in Thane and Powai',
+      alt: 'Premium hair coloring services in Mumbai salon',
+      seoCaption: 'Vibrant, long-lasting hair color crafted by specialists.',
       icon: 'Palette'
     },
     {
       id: 'professional-highlighting',
       name: 'Professional Hair Highlighting',
-      description: 'Professional highlighting services in Thane and Powai',
+      description: 'Natural-looking highlights and balayage techniques to add depth, shine, and dimension to hair.',
       image: '/professional-hair-highlighting-services.png',
-      alt: 'Professional hair highlighting services at La Coiffure Salon Thane Powai - Expert highlights, lowlights, and dimensional color techniques',
-      seoCaption: 'Expert hair highlighting, lowlights, and dimensional color techniques by professional colorists in Thane and Powai',
+      alt: 'Natural hair highlights by salon experts',
+      seoCaption: 'Add dimension with flawless highlights and balayage.',
       icon: 'Sparkles'
     },
     {
       id: 'hair-spa-treatments',
       name: 'Hair Spa & Treatments',
-      description: 'Relaxing spa and hair treatments in Thane and Powai',
+      description: 'Revitalizing hair spa and advanced treatments that restore health, strength, and natural shine.',
       image: '/hair-spa-treatments-services.png',
-      alt: 'Luxury spa and hair treatments at La Coiffure Salon Thane Powai - Relaxing hair spa, scalp treatments, and wellness services',
-      seoCaption: 'Luxury hair spa treatments, scalp therapy, and relaxing wellness services in Thane and Powai',
+      alt: 'Hair spa and treatment for healthy shine',
+      seoCaption: 'Rejuvenating spa therapies for hair and scalp health.',
       icon: 'Heart'
     },
     {
       id: 'hair-texturizing-styling',
       name: 'Hair Texturizing & Styling',
-      description: 'Hair texturizing and styling in Thane and Powai',
+      description: 'Professional smoothening, straightening, and volumizing services for perfectly styled textured hair.',
       image: '/hair-texturizing-styling-services.png',
-      alt: 'Professional hair texturizing and styling services at La Coiffure Salon Thane Powai - Expert texturizing, perms, and volume treatments',
-      seoCaption: 'Expert hair texturizing, perming, and volume enhancement treatments by professional stylists in Thane and Powai',
+      alt: 'Hair smoothening and texture services',
+      seoCaption: 'Get silky smooth or voluminous textured hair.',
       icon: 'Zap'
     },
     {
       id: 'facial-treatments-skincare',
       name: 'Facial Treatments & Skincare',
-      description: 'Professional facial treatments in Thane and Powai',
+      description: 'Luxury facials that cleanse, hydrate, and rejuvenate skin for a youthful and radiant glow.',
       image: '/facial-treatments-skincare-services.png',
-      alt: 'Professional facial treatments and skincare services at La Coiffure Salon Thane Powai - Expert facials, cleansing, and skin rejuvenation',
-      seoCaption: 'Professional facial treatments, deep cleansing, and skin rejuvenation services by expert estheticians in Thane and Powai',
+      alt: 'Luxury facial treatments for glowing skin',
+      seoCaption: 'Brighten and refresh your skin with premium facials.',
       icon: 'Flower'
     },
     {
       id: 'hair-cleanup-maintenance',
       name: 'Hair Cleanup & Maintenance',
-      description: 'Hair cleanup and maintenance in Thane and Powai',
+      description: 'Deep cleansing clean-ups to remove impurities, refresh skin, and restore natural clarity.',
       image: '/hair-cleanup-maintenance-services.png',
-      alt: 'Professional hair cleanup and maintenance services at La Coiffure Salon Thane Powai - Expert hair care, conditioning, and maintenance treatments',
-      seoCaption: 'Professional hair cleanup, conditioning, and maintenance treatments for healthy hair in Thane and Powai',
+      alt: 'Skin clean-up service for clear complexion',
+      seoCaption: 'Deep cleansing clean-ups for fresh, healthy skin.',
       icon: 'Sparkles'
     },
     {
       id: 'manicure-pedicure-services',
       name: 'Manicure & Pedicure Services',
-      description: 'Manicure and pedicure services in Thane and Powai',
+      description: 'Relaxing manicure and pedicure services for well-groomed, polished, and healthy hands and feet.',
       image: '/manicure-pedicure-services.png',
-      alt: 'Professional manicure and pedicure services at La Coiffure Salon Thane Powai - Expert nail care, nail art, and hand foot treatments',
-      seoCaption: 'Expert manicure, pedicure, nail art, and hand foot care services by professional nail technicians in Thane and Powai',
+      alt: 'Luxury manicure and pedicure salon service',
+      seoCaption: 'Pamper your hands and feet with expert mani-pedi.',
       icon: 'Hand'
     },
     {
       id: 'skincare-beauty-treatments',
       name: 'Skincare & Beauty Treatments',
-      description: 'Skincare and beauty treatments in Thane and Powai',
+      description: 'Comprehensive skincare solutions tailored to address individual needs for flawless, glowing skin.',
       image: '/skincare-beauty-treatments-services.png',
-      alt: 'Professional skincare and beauty treatments at La Coiffure Salon Thane Powai - Expert skin care, anti-aging treatments, and beauty services',
-      seoCaption: 'Professional skincare, anti-aging treatments, and beauty enhancement services by expert estheticians in Thane and Powai',
+      alt: 'Advanced skin care treatments at salon',
+      seoCaption: 'Personalized skin solutions for radiant beauty.',
       icon: 'Sun'
     },
     {
       id: 'hair-bleaching-polishing',
       name: 'Hair Bleaching & Polishing',
-      description: 'Hair bleaching and polishing in Thane and Powai',
+      description: 'Effective bleach and polishing treatments to brighten skin tone and achieve smooth radiance.',
       image: '/hair-bleaching-polishing-services.png',
-      alt: 'Professional hair bleaching and polishing services at La Coiffure Salon Thane Powai - Expert bleaching, hair lightening, and color treatments',
-      seoCaption: 'Expert hair bleaching, lightening, and color polishing treatments by professional colorists in Thane and Powai',
+      alt: 'Skin bleach and body polishing service',
+      seoCaption: 'Get smooth, even-toned skin with polishing treatments.',
       icon: 'Sparkles'
     },
     {
       id: 'hair-removal-waxing',
       name: 'Hair Removal & Waxing',
-      description: 'Hair removal and waxing services in Thane and Powai',
+      description: 'Safe and gentle waxing services for soft, smooth, and hair-free skin.',
       image: '/hair-removal-waxing-services.png',
-      alt: 'Professional hair removal and waxing services at La Coiffure Salon Thane Powai - Expert waxing, hair removal, and skin care treatments',
-      seoCaption: 'Professional waxing, hair removal, and skin care treatments by expert estheticians in Thane and Powai',
+      alt: 'Professional waxing services at luxury salon',
+      seoCaption: 'Gentle, precise waxing for silky smooth skin.',
       icon: 'Zap'
     },
     {
       id: 'nail-care-nail-art',
       name: 'Nail Care & Nail Art',
-      description: 'Nail care and nail art in Thane and Powai',
+      description: 'Creative nail art, extensions, and professional care for stylish, long-lasting nails.',
       image: '/nail-care-nail-art-services.png',
-      alt: 'Professional nail care and nail art services at La Coiffure Salon Thane Powai - Expert nail design, nail art, and nail care treatments',
-      seoCaption: 'Expert nail care, nail art, and creative nail design services by professional nail artists in Thane and Powai',
+      alt: 'Luxury nail art and extensions',
+      seoCaption: 'Trendy nail designs and flawless finishing.',
       icon: 'Hand'
     },
     {
       id: 'professional-makeup-services',
       name: 'Professional Makeup Services',
-      description: 'Professional makeup services in Thane and Powai',
+      description: 'Professional makeup artistry for bridal, party, and special occasions with flawless finishing.',
       image: '/professional-makeup-services.png',
-      alt: 'Professional makeup and beauty services at La Coiffure Salon Thane Powai - Expert bridal makeup, party makeup, and beauty enhancement',
-      seoCaption: 'Expert bridal makeup, party makeup, and professional beauty enhancement services by certified makeup artists in Thane and Powai',
+      alt: 'Professional bridal and party makeup',
+      seoCaption: 'Glamorous makeup looks for every occasion.',
       icon: 'Sparkles'
     }
   ];
@@ -227,14 +228,13 @@ const ServicesCatalog = () => {
               >
                 {/* Category Image */}
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <AppImage
                     src={category.image}
                     alt={category.alt || category.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      // Fallback to default image if Strapi image fails to load
-                      e.target.src = 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400&h=300&fit=crop&crop=face';
-                    }}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority={false}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 </div>
