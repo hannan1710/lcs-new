@@ -21,6 +21,21 @@
     <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/spa.png</image:loc>
+      <image:title>Professional Spa Services</image:title>
+      <image:caption>Comprehensive spa treatments and beauty services</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/facial.png</image:loc>
+      <image:title>Facial Treatments</image:title>
+      <image:caption>Expert facial care and skin treatments</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/makeup.png</image:loc>
+      <image:title>Professional Makeup Services</image:title>
+      <image:caption>Expert makeup application and beauty styling</image:caption>
+    </image:image>
   </url>
   
   <!-- Gallery Portfolio -->
@@ -29,6 +44,26 @@
     <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/1.jpg</image:loc>
+      <image:title>Hair Styling Portfolio</image:title>
+      <image:caption>Professional hair styling showcase</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/2.jpg</image:loc>
+      <image:title>Beauty Services Gallery</image:title>
+      <image:caption>Our latest beauty treatments and transformations</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/3.jpg</image:loc>
+      <image:title>Salon Portfolio</image:title>
+      <image:caption>Professional salon work and client transformations</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/4.jpg</image:loc>
+      <image:title>Hair Color Gallery</image:title>
+      <image:caption>Expert hair coloring and highlighting services</image:caption>
+    </image:image>
   </url>
   
   <!-- Appointment Booking -->
@@ -53,6 +88,21 @@
     <lastmod>2024-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/assets/images/nizam.jpg</image:loc>
+      <image:title>Our Professional Team</image:title>
+      <image:caption>Meet our experienced stylists and beauty experts</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/assets/images/imsa.jpg</image:loc>
+      <image:title>Salon Interior</image:title>
+      <image:caption>Our modern and comfortable salon environment</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacoiffuresalons.com/lcsg.png</image:loc>
+      <image:title>La Coiffure Salon</image:title>
+      <image:caption>Your trusted beauty destination in Thane and Powai</image:caption>
+    </image:image>
   </url>
   
   <!-- Login -->
@@ -60,7 +110,7 @@
     <loc>https://lacoiffuresalons.com/login</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.1</priority>
   </url>
   
   <!-- Register -->
@@ -68,7 +118,7 @@
     <loc>https://lacoiffuresalons.com/register</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.1</priority>
   </url>
   
 </urlset>
