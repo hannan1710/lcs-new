@@ -229,7 +229,7 @@ const Footer = () => {
               © 2020 La Coiffure Salon. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link
+              {/* <Link
                 to="/privacy-policy"
                 className="text-white/60 hover:text-accent transition-luxury"
               >
@@ -246,7 +246,7 @@ const Footer = () => {
                 className="text-white/60 hover:text-accent transition-luxury"
               >
                 Cancellation Policy
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
