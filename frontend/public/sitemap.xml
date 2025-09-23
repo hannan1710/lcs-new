@@ -194,36 +194,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://lacoiffuresalons.com/assets/images/nizam.jpg</image:loc>
-      <image:title>Our Professional Team</image:title>
-      <image:caption>Meet our experienced stylists and beauty experts</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://lacoiffuresalons.com/assets/images/imsa.jpg</image:loc>
-      <image:title>Salon Interior</image:title>
-      <image:caption>Our modern and comfortable salon environment</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://lacoiffuresalons.com/la-coiffure-salon-logo.png</image:loc>
-      <image:title>La Coiffure Salon</image:title>
+      <image:title>La Coiffure Salon Logo</image:title>
       <image:caption>Your trusted beauty destination in Thane and Powai</image:caption>
     </image:image>
-  </url>
-  
-  <!-- Login -->
-  <url>
-    <loc>https://lacoiffuresalons.com/login</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  
-  <!-- Register -->
-  <url>
-    <loc>https://lacoiffuresalons.com/register</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
   </url>
   
 </urlset>
