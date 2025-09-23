@@ -9,7 +9,7 @@ class FileAdmin {
       services: [
         {
           id: 1,
-          name: "Haircut Men",
+          name: "Men's Haircut & Styling",
           category: "hair",
           price: 500,
           duration: "30 min",
@@ -18,7 +18,7 @@ class FileAdmin {
         },
         {
           id: 2,
-          name: "Haircut Women",
+          name: "Women's Haircut & Styling",
           category: "hair",
           price: 800,
           duration: "45 min",
@@ -27,7 +27,7 @@ class FileAdmin {
         },
         {
           id: 3,
-          name: "Hair Color",
+          name: "Hair Coloring & Highlights",
           category: "color",
           price: 1500,
           duration: "120 min",
@@ -36,7 +36,7 @@ class FileAdmin {
         },
         {
           id: 4,
-          name: "Facial",
+          name: "Facial Treatments & Skincare",
           category: "spa",
           price: 1200,
           duration: "60 min",
@@ -45,7 +45,7 @@ class FileAdmin {
         },
         {
           id: 5,
-          name: "Manicure",
+          name: "Manicure & Pedicure Services",
           category: "nails",
           price: 600,
           duration: "45 min",
@@ -54,8 +54,8 @@ class FileAdmin {
         },
         {
           id: 6,
-          name: "Pedicure",
-          category: "nails",
+          name: "Professional Makeup Services",
+          category: "beauty",
           price: 800,
           duration: "60 min",
           description: "Complete foot care and nail treatment.",

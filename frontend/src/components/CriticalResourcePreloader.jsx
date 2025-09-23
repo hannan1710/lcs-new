@@ -5,10 +5,10 @@ const CriticalResourcePreloader = () => {
   useEffect(() => {
     // Critical images that should be preloaded
     const criticalImages = [
-      '/1.jpg',
-      '/2.jpg',
-      '/3.jpg',
-      '/4.jpg',
+      '/la-coiffure-powai-ash-brown-highlights.jpg',
+      '/la-coiffure-powai-grey-bob-haircut.jpg',
+      '/la-coiffure-thane-balayage-highlights-curly-hair.jpg',
+      '/la-coiffure-thane-men-haircut-and-beard.jpg',
       '/logo.jpg',
       '/lcsg.png',
       '/assets/images/logo.jpg'
