@@ -18,7 +18,7 @@ export default defineConfig({
           '/la-coiffure-thane-balayage-highlights-curly-hair.jpg',
           '/la-coiffure-thane-men-haircut-and-beard.jpg',
           '/logo.jpg',
-          '/lcsg.png'
+          '/la-coiffure-salon-logo.png'
         ];
         
         // Find the HTML file in the bundle

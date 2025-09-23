@@ -150,7 +150,7 @@ const Login = () => {
             <div className="text-center mb-8">
               <div className="w-16 h-16 rounded-full mx-auto mb-4">
                 <img
-                  src="/lcsg.png" // Replace with the actual path to your logo
+                  src="/la-coiffure-salon-logo.png" // Replace with the actual path to your logo
                   alt="La Coiffure Logo"
                   className="w-full h-full object-contain"
                 />

@@ -39,7 +39,7 @@ const Logo = ({ size = 'md', className = '', showText = true, variant = 'default
   return (
     <div className={`flex items-center space-x-3 ${className}`}>
       <img 
-       src="/lcsg.png" 
+       src="/la-coiffure-salon-logo.png" 
         alt="La Coiffure Salon Logo" 
         className={logoClass}
       />

@@ -15,14 +15,14 @@ const ContactLocationPage = () => {
       address: 'La Coiffure Salon, Shop no.11&12,Saraswati School, Anand Nagar, Thane West, Thane, Maharashtra 400615',
       phone: '+91 99670 02481',
       hours: 'Mon-Sat: 9AM-8PM, Sun: 10AM-6PM',
-      image: 'thane.png'
+      image: 'la-coiffure-salon-thane-location.png'
     },
     {
       name: 'La Coiffure Salon, Powai',
       address: 'La Coiffure Salon, SN 161&162 floor 1st, galleriya, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076',
       phone: '+91 74000 68615',
       hours: 'Mon-Sat: 9AM-8PM, Sun: 10AM-6PM',
-      image: 'powai.png'
+      image: 'la-coiffure-salon-powai-location.png'
     }
   ];
 

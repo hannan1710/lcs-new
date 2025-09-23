@@ -13,7 +13,7 @@ const SEOHead = ({
 }) => {
   const siteName = 'La Coiffure Salon';
   const siteUrl = 'https://lacoiffuresalons.in';
-  const defaultImage = `${siteUrl}/lcsg.png`;
+  const defaultImage = `${siteUrl}/la-coiffure-salon-logo.png`;
   
   const fullTitle = title ? `${title} | ${siteName}` : `${siteName} - Premium Hair & Beauty Services in Thane & Powai`;
   const fullDescription = description || 'La Coiffure Salon offers premium hair styling, beauty treatments, and wellness services in Thane and Powai. Expert stylists, modern techniques, and luxury experience.';

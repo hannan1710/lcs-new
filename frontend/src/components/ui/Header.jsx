@@ -73,7 +73,7 @@ const Header = () => {
               onClick={closeMobileMenu}
             >
               <img
-                src="/lcsg.png" // or {logo}
+                src="/la-coiffure-salon-logo.png" // or {logo}
                 alt="La Coiffure Logo"
                 className="h-12 w-auto object-contain lg:h-14"
               />

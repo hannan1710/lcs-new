@@ -10,7 +10,7 @@ const CriticalResourcePreloader = () => {
       '/la-coiffure-thane-balayage-highlights-curly-hair.jpg',
       '/la-coiffure-thane-men-haircut-and-beard.jpg',
       '/logo.jpg',
-      '/lcsg.png',
+      '/la-coiffure-salon-logo.png',
       '/assets/images/logo.jpg'
     ];
 

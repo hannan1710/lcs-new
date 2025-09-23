@@ -5,7 +5,7 @@ import Image from '../../components/AppImage';
 import Icon from '../../components/AppIcon';
 
 const AboutUs = () => {
-  const images = ['/thane.png', '/powai.png'];
+  const images = ['/la-coiffure-salon-thane-location.png', '/la-coiffure-salon-powai-location.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Function to move to the next image
