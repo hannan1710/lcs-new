@@ -10,31 +10,31 @@
 @layer base {
   :root {
     /* Core Colors */
-    --color-background: #000000; /* changed to black for main template */
-    --color-foreground: #FFFFFF; /* changed to white for contrast on black background */
-    --color-border: #555555; /* lighter border for better visibility on black background */
-    --color-input: #1A1A1A; /* dark input background */
+    --color-background: #FAFAFA; /* warm off-white background */
+    --color-foreground: #1A1A1A; /* near-black text */
+    --color-border: #E5E5E5; /* light border for better visibility */
+    --color-input: #FFFFFF; /* white input background */
     --color-ring: #D4AF37; /* classic gold */
     
     /* Card Colors */
-    --color-card: #1A1A1A; /* dark card background */
-    --color-card-foreground: #FFFFFF; /* white text on dark cards */
+    --color-card: #FFFFFF; /* white card background */
+    --color-card-foreground: #1A1A1A; /* dark text on white cards */
     
     /* Popover Colors */
-    --color-popover: #1A1A1A; /* dark popover */
-    --color-popover-foreground: #FFFFFF; /* white text */
+    --color-popover: #FFFFFF; /* white popover */
+    --color-popover-foreground: #1A1A1A; /* dark text */
     
     /* Muted Colors */
-    --color-muted: #2A2A2A; /* dark gray for muted elements */
-    --color-muted-foreground: #CCCCCC; /* light gray text */
+    --color-muted: #F5F5F5; /* light gray for muted elements */
+    --color-muted-foreground: #666666; /* medium gray text */
     
     /* Primary Colors */
     --color-primary: #D4AF37; /* gold as primary for luxury feel */
     --color-primary-foreground: #000000; /* black text on gold */
     
     /* Secondary Colors */
-    --color-secondary: #2A2A2A; /* dark gray */
-    --color-secondary-foreground: #FFFFFF; /* white text */
+    --color-secondary: #F5F5F5; /* light gray */
+    --color-secondary-foreground: #1A1A1A; /* dark text */
     
     /* Accent Colors */
     --color-accent: #D4AF37; /* classic gold */
