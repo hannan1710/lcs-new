@@ -89,8 +89,8 @@ export default defineConfig({
         comments: false,
       },
     },
-    // Optimize bundle size
-    assetsInlineLimit: 2048, // Inline smaller images
+    // Optimize bundle size and images
+    assetsInlineLimit: 1024, // Inline smaller images (reduced from 2048)
     chunkSizeWarningLimit: 500, // Warn for chunks > 500KB
     sourcemap: false, // Disable sourcemaps in production
     cssCodeSplit: true, // Split CSS for better caching

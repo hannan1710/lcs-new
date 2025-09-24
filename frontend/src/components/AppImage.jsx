@@ -61,9 +61,24 @@ const Image = memo(({
       return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
     };
 
-    // For production, you would integrate with image optimization service
-    // For now, return original but with optimization hints
-    return originalSrc;
+    // Add compression parameters for better performance
+    const url = new URL(originalSrc, window.location.origin);
+    
+    // Add compression hints for different image types
+    if (originalSrc.includes('.jpg') || originalSrc.includes('.jpeg')) {
+      // For JPEG images, add quality parameter
+      url.searchParams.set('q', '80'); // 80% quality for good compression
+      url.searchParams.set('f', 'auto'); // Auto format selection
+    } else if (originalSrc.includes('.png')) {
+      // For PNG images, add compression level
+      url.searchParams.set('f', 'auto'); // Auto format selection
+    }
+    
+    // Add responsive image parameters
+    url.searchParams.set('w', 'auto'); // Auto width
+    url.searchParams.set('h', 'auto'); // Auto height
+    
+    return url.toString();
   };
 
   // Generate blur placeholder for better UX
