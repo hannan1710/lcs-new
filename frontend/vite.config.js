@@ -68,26 +68,14 @@ export default defineConfig({
         }
       }
     },
-    // Advanced minification
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-        pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.warn'],
-        passes: 2,
-        unsafe: true,
-        unsafe_math: true,
-        unsafe_methods: true,
-        hoist_funs: true,
-        hoist_vars: true,
-      },
-      mangle: {
-        safari10: true,
-      },
-      format: {
-        comments: false,
-      },
+    // Enhanced minification for better performance and stability
+    minify: 'esbuild',
+    esbuild: {
+      drop: ['console', 'debugger'],
+      legalComments: 'none',
+      target: 'es2020',
+      format: 'esm',
+      treeShaking: true,
     },
     // Optimize bundle size and images
     assetsInlineLimit: 1024, // Inline smaller images (reduced from 2048)
@@ -121,13 +109,28 @@ export default defineConfig({
       return { relative: true };
     },
   },
-  // Server configuration for development
+  // Server configuration for development - localhost optimized
   server: {
+    // Fix localhost issues
+    host: '0.0.0.0', // Allow external connections
+    port: 5173,
+    strictPort: true,
     // Enable HTTP/2 in development
     https: false,
-    // Optimize HMR
+    // Optimize HMR for localhost
     hmr: {
       overlay: false,
+      port: 5173,
+      host: 'localhost',
     },
+    // Prevent black screen on updates
+    watch: {
+      usePolling: false,
+      interval: 100,
+    },
+    // Fix localhost connection issues
+    cors: true,
+    // Force localhost to work properly
+    force: true,
   },
 })
