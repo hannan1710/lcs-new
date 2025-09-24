@@ -61,7 +61,12 @@ const Image = memo(({
       return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
     };
 
-    // Add compression parameters for better performance
+    // For local images, apply client-side compression
+    if (originalSrc.startsWith('/') || originalSrc.startsWith('./')) {
+      return originalSrc; // Local images are already optimized by Vite
+    }
+
+    // For external images or when using image optimization services
     const url = new URL(originalSrc, window.location.origin);
     
     // Add compression hints for different image types

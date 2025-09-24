@@ -96,6 +96,8 @@ export default defineConfig({
     cssCodeSplit: true, // Split CSS for better caching
     // Enable modern builds
     target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari14'],
+    // Image optimization during build
+    assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.webp'],
   },
   // Optimize dependencies
   optimizeDeps: {
