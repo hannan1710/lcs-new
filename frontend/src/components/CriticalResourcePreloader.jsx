@@ -1,53 +1,42 @@
 import { useEffect } from 'react';
-import { preloadImages } from '../utils/imageOptimization';
 
 const CriticalResourcePreloader = () => {
   useEffect(() => {
-    // Critical images that should be preloaded
+    // Only preload truly critical resources for LCP
     const criticalImages = [
       '/la-coiffure-salon-logo.png',
       '/la-coiffure-salon-thane-location.png',
-      '/la-coiffure-salon-powai-location.png',
+      '/la-coiffure-salon-powai-location.png'
+    ];
+
+    // Preload critical images with high priority
+    criticalImages.forEach(imageSrc => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = imageSrc;
+      link.fetchPriority = 'high';
+      document.head.appendChild(link);
+    });
+
+    // Preload likely next page resources
+    const nextPageResources = [
       '/mens-haircut-styling-services.png',
-      '/womens-haircut-styling-services.png',
-      '/hair-coloring-highlights-services.png',
-      '/professional-hair-highlighting-services.png',
-      '/hair-spa-treatments-services.png',
-      '/la-coiffure-powai-ash-brown-highlights.jpg',
-      '/la-coiffure-powai-grey-bob-haircut.jpg',
-      '/logo.jpg'
+      '/womens-haircut-styling-services.png'
     ];
 
-    // Preload critical images
-    preloadImages(criticalImages);
-
-    // Preload critical fonts (if any)
-    const criticalFonts = [
-      // Add any critical font URLs here
-    ];
-
-    criticalFonts.forEach(fontUrl => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'font';
-      link.type = 'font/woff2';
-      link.href = fontUrl;
-      link.crossOrigin = 'anonymous';
-      document.head.appendChild(link);
-    });
-
-    // Preload critical CSS (if any)
-    const criticalCSS = [
-      // Add any critical CSS URLs here
-    ];
-
-    criticalCSS.forEach(cssUrl => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'style';
-      link.href = cssUrl;
-      document.head.appendChild(link);
-    });
+    // Use requestIdleCallback for non-critical resources
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => {
+        nextPageResources.forEach(imageSrc => {
+          const link = document.createElement('link');
+          link.rel = 'prefetch';
+          link.as = 'image';
+          link.href = imageSrc;
+          document.head.appendChild(link);
+        });
+      });
+    }
 
   }, []);
 

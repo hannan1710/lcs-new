@@ -31,12 +31,9 @@ export default defineConfig({
             .map(src => `<link rel="preload" as="image" href="${src}" fetchpriority="high">`)
             .join('\n  ');
           
-          // Add critical CSS preload
-          const criticalCSS = `<link rel="preload" as="style" href="/src/styles/critical.css" fetchpriority="high">`;
-          
           htmlContent = htmlContent.replace(
             '<head>',
-            `<head>\n  ${preloadLinks}\n  ${criticalCSS}`
+            `<head>\n  ${preloadLinks}`
           );
           
           bundle[htmlFile].source = htmlContent;
@@ -45,39 +42,15 @@ export default defineConfig({
     }
   ],
   build: {
-    // Aggressive optimization for performance
+    // Optimized build configuration
     rollupOptions: {
       output: {
-        // Better chunk splitting for caching
-        manualChunks: (id) => {
-          // Core React libraries
-          if (id.includes('react') || id.includes('react-dom')) {
-            return 'react-vendor';
-          }
-          // Router and navigation
-          if (id.includes('react-router')) {
-            return 'router';
-          }
-          // Heavy UI libraries
-          if (id.includes('framer-motion') || id.includes('lucide-react') || id.includes('recharts')) {
-            return 'ui-heavy';
-          }
-          // Utility libraries
-          if (id.includes('date-fns') || id.includes('clsx') || id.includes('class-variance-authority')) {
-            return 'utils';
-          }
-          // Form libraries
-          if (id.includes('react-hook-form') || id.includes('react-helmet')) {
-            return 'forms';
-          }
-          // Analytics and external services
-          if (id.includes('@vercel/analytics') || id.includes('@vercel/speed-insights') || id.includes('@emailjs')) {
-            return 'external-services';
-          }
-          // Everything else in vendor
-          if (id.includes('node_modules')) {
-            return 'vendor';
-          }
+        // Simplified chunk splitting for better performance
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+          'router': ['react-router-dom'],
+          'ui': ['framer-motion', 'lucide-react'],
+          'vendor': ['clsx', 'class-variance-authority']
         },
         // Optimize chunk and asset names
         chunkFileNames: 'assets/js/[name]-[hash].js',

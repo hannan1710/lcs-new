@@ -2,9 +2,6 @@ import React from 'react';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import ContactInfo from './components/ContactInfo';
-// import ContactForm from './components/ContactForm';
-// import SocialConnect from './components/SocialConnect';
-// import EmergencyContact from './components/EmergencyContact';
 import Icon from '../../components/AppIcon';
 import Image from '../../components/AppImage';
 
@@ -170,14 +167,7 @@ const ContactLocationPage = () => {
         </div>
       </section>
 
-      {/* Social Connect */}
-{/*       <section className="py-12">
-        <div className="container mx-auto px-6 lg:px-8">
-          <SocialConnect />
-        </div>
-      </section> */}
-
-      <Footer />
+      <Footer />
     </div>
   );
 };
