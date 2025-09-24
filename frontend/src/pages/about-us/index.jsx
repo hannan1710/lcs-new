@@ -50,13 +50,19 @@ const AboutUs = () => {
      <h2 className="font-heading text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-foreground">Our Story</h2>
      <div className="space-y-3 md:space-y-4">
        <p className="text-muted-foreground text-xs md:text-sm lg:text-base leading-relaxed">
-         Founded in 2020 by Mr. Imran Salmani, a L'Oréal Professional Certified Balayage Expert and master stylist with over a decade of experience, La Coiffure Salon was born from a passion for blending high-fashion styling with warm, personalized service. Our two premium locations in Thane and Powai are led by Mr. Salmani and co-founder Mr. Nizam Shaikh, both highly experienced stylists with 15 years of combined expertise.
+         La Coiffure Salon started by Mr. Imran Salmani in the year 2020 with the first salon in Thane. Imran Salmani is the founder of La Coiffure Salon, a successful salon in Thane, and the Powai salon started with Mr. Nizam Shaikh.
        </p>
        <p className="text-muted-foreground text-xs md:text-sm lg:text-base leading-relaxed">
-         Our journey is rooted in trust, consistency, and innovation. We believe every guest deserves a tailored experience, which is why our stylists and beauty experts continuously refine their craft to bring you the latest techniques and premium treatments. To ensure the highest standard of service, all new hair stylists and beauty therapists undergo mandatory, rigorous in-house training.
+         Mr. Imran and Mr. Nizam are the best style directors in the industry. They both are professionally qualified from VIDAL SASSOON, UK. Also, they are qualified from JEAN CLAUDE BIGUINE, PARIS. They are having 15 years of rich experience in the industry.
        </p>
        <p className="text-muted-foreground text-xs md:text-sm lg:text-base leading-relaxed">
-         La Coiffure Salon's vision is to be a leading salon brand and a top employer in the industry. Our mission is to provide consistent and amazing experiences at a valuable price, delivered by a passionate and energetic team in a pleasing, safe, and hygienic environment.
+         Imran has also worked with the best fashion designers in the Bollywood industry - Mr. Manish Malhotra, Archana Kochhar, Rohit Bal. National TV shows like "Mujh Se Shadi Karoge" (by Shehnaz Gill), BIGG BOSS 13, Fashion shows like GQ, GRAZIA, VAN HEUSEN, BOMBAY TIMES and many more.
+       </p>
+       <p className="text-muted-foreground text-xs md:text-sm lg:text-base leading-relaxed">
+         The vision of La Coiffure Salon is to be a leading salon brand and employer of choice at national level. To provide consistent amazing experience at value price and create highly skilled, passionate and energetic team. Our organisation is also backed by a culture of creativity, ownership, integrity for our guests to achieve their desire and aspirations in an environment that is pleasing, safe and hygienic, supported by our certified professional and talented team members.
+       </p>
+       <p className="text-muted-foreground text-xs md:text-sm lg:text-base leading-relaxed">
+         All the hair stylists and beauty therapists joining La Coiffure Salon undergo mandatory, rigorous in-house training before they serve you at our salon.
        </p>
      </div>
    </div>
