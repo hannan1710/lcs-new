@@ -13,8 +13,6 @@ const GalleryPortfolio = lazy(() => import('./pages/gallery-portfolio'));
 const AppointmentBooking = lazy(() => import('./pages/appointment-booking'));
 const ContactLocationPage = lazy(() => import('./pages/contact-location'));
 const ServicesCatalog = lazy(() => import('./pages/services-catalog'));
-const Login = lazy(() => import('./pages/auth/Login'));
-const Register = lazy(() => import('./pages/auth/Register'));
 const Dashboard = lazy(() => import('./pages/dashboard/Dashboard'));
 const AdminPanel = lazy(() => import('./pages/admin/AdminPanel'));
 
@@ -85,18 +83,6 @@ const Routes = () => {
             </Suspense>
           } />
           
-          {/* Authentication */}
-          <Route path="/login" element={
-            <Suspense fallback={<PageLoader />}>
-              <Login />
-            </Suspense>
-          } />
-          <Route path="/register" element={
-            <Suspense fallback={<PageLoader />}>
-              <Register />
-            </Suspense>
-          } />
-          <Route path="/admin-login" element={<Navigate to="/login" replace />} />
           
           {/* User Dashboard */}
           <Route path="/dashboard" element={

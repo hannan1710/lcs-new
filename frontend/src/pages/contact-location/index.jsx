@@ -4,6 +4,7 @@ import Footer from '../../components/ui/Footer';
 import ContactInfo from './components/ContactInfo';
 import Icon from '../../components/AppIcon';
 import Image from '../../components/AppImage';
+import SEOHead from '../../components/SEOHead';
 
 const ContactLocationPage = () => {
   const salonLocations = [
@@ -33,9 +34,51 @@ const ContactLocationPage = () => {
   };
 
 
-  return (
-    <div className="min-h-screen bg-background">
-      <Header />
+  // Structured data for contact page
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact & Locations - La Coiffure Salon",
+    "description": "Find La Coiffure Salon locations in Thane and Powai. Contact information, addresses, phone numbers, and business hours for our luxury hair and beauty salons.",
+    "url": "https://lacoiffuresalons.com/contact-location",
+    "mainEntity": {
+      "@type": "BeautySalon",
+      "name": "La Coiffure Salon",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Shop no.11&12, Saraswati School, Anand Nagar",
+          "addressLocality": "Thane West",
+          "addressRegion": "Maharashtra",
+          "postalCode": "400615",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "SN 161&162 floor 1st, galleriya, Hiranandani Gardens, Panchkutir Ganesh Nagar",
+          "addressLocality": "Powai",
+          "addressRegion": "Mumbai",
+          "postalCode": "400076",
+          "addressCountry": "IN"
+        }
+      ],
+      "telephone": ["+91 99670 02481", "+91 74000 68615"],
+      "openingHours": "Mo-Sa 09:00-20:00, Su 10:00-18:00"
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Contact & Locations | La Coiffure Salon Thane & Powai"
+        description="Visit La Coiffure Salon at our Thane and Powai locations. Find addresses, phone numbers, business hours, and directions to our luxury hair and beauty salons."
+        keywords="La Coiffure Salon contact, salon Thane address, salon Powai location, hair salon Thane phone, beauty salon Powai hours, salon contact number, salon directions Mumbai"
+        canonicalUrl="/contact-location"
+        ogImage="/la-coiffure-salon-logo.png"
+        ogType="website"
+        structuredData={structuredData}
+      />
+      <Header />
       
       {/* Hero Section */}
       <section className="pt-20 lg:pt-24 pb-12 bg-gradient-to-b from-muted/30 to-background">

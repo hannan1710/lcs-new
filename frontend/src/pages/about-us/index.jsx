@@ -3,6 +3,7 @@ import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import Image from '../../components/AppImage';
 import Icon from '../../components/AppIcon';
+import SEOHead from '../../components/SEOHead';
 
 const AboutUs = () => {
   const images = ['/la-coiffure-salon-thane-location.png', '/la-coiffure-salon-powai-location.png'];
@@ -26,9 +27,61 @@ const AboutUs = () => {
     return () => clearInterval(interval);
   }, [currentImageIndex]);
 
-  return (
-    <div className="min-h-screen bg-background">
-      <Header />
+  // Structured data for about page
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About La Coiffure Salon",
+    "description": "Learn about La Coiffure Salon's story, founders Imran Salmani and Nizam Shaikh, and our commitment to luxury hair and beauty services in Thane & Powai.",
+    "url": "https://lacoiffuresalons.com/about-us",
+    "mainEntity": {
+      "@type": "BeautySalon",
+      "name": "La Coiffure Salon",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Imran Salmani",
+          "description": "Founder of La Coiffure Salon, professionally qualified from VIDAL SASSOON UK and JEAN CLAUDE BIGUINE Paris with 15+ years experience"
+        },
+        {
+          "@type": "Person", 
+          "name": "Nizam Shaikh",
+          "description": "Co-founder of La Coiffure Salon Powai, professionally qualified from VIDAL SASSOON UK and JEAN CLAUDE BIGUINE Paris with 15+ years experience"
+        }
+      ],
+      "foundingDate": "2020",
+      "description": "Luxury hair and beauty salon offering premium services in Thane and Powai, Mumbai",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Anand Nagar",
+          "addressLocality": "Thane",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Galleria Hiranandani",
+          "addressLocality": "Powai",
+          "addressRegion": "Maharashtra", 
+          "addressCountry": "IN"
+        }
+      ]
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <SEOHead
+        title="About Us | La Coiffure Salon - Expert Stylists in Thane & Powai"
+        description="Meet the founders of La Coiffure Salon - Imran Salmani & Nizam Shaikh. Professionally qualified from VIDAL SASSOON UK & JEAN CLAUDE BIGUINE Paris. 15+ years experience in luxury hair & beauty services."
+        keywords="about La Coiffure Salon, Imran Salmani founder, Nizam Shaikh stylist, VIDAL SASSOON qualified, JEAN CLAUDE BIGUINE trained, luxury salon Thane, premium salon Powai, expert hair stylists Mumbai"
+        canonicalUrl="/about-us"
+        ogImage="/la-coiffure-salon-logo.png"
+        ogType="website"
+        structuredData={structuredData}
+      />
+      <Header />
 
       <main className="pt-20">
         {/* Hero */}

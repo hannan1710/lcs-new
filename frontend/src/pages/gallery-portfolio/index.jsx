@@ -5,6 +5,7 @@ import Button from '../../components/ui/Button';
 import Icon from '../../components/AppIcon';
 import Image from '../../components/AppImage';
 import ImageLightbox from './components/ImageLightbox';
+import SEOHead from '../../components/SEOHead';
 import { getAllGalleryImages } from '../../data/galleryData';
 
 const GalleryPortfolio = () => {
@@ -31,8 +32,46 @@ const GalleryPortfolio = () => {
     setCurrentImageIndex((prev) => (prev - 1 + galleryData.length) % galleryData.length);
   };
 
+  // Structured data for gallery page
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "La Coiffure Salon Portfolio Gallery",
+    "description": "Explore our stunning portfolio showcasing hair transformations, beauty treatments, and bridal makeovers at La Coiffure Salon in Powai & Thane.",
+    "url": "https://lacoiffuresalons.com/gallery-portfolio",
+    "image": galleryData.map(item => ({
+      "@type": "ImageObject",
+      "url": `https://lacoiffuresalons.com${item.src}`,
+      "caption": item.alt,
+      "description": item.alt
+    })),
+    "provider": {
+      "@type": "BeautySalon",
+      "name": "La Coiffure Salon",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Galleria Hiranandani, Powai",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400076",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-9876543210",
+      "url": "https://lacoiffuresalons.com"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Gallery & Portfolio | Hair Transformations & Beauty Services"
+        description="Explore La Coiffure Salon's stunning portfolio featuring hair transformations, keratin treatments, bridal makeovers, and beauty services in Powai & Thane. See our expert work and book your appointment."
+        keywords="hair gallery Powai, hair portfolio Thane, hair transformations Powai, beauty gallery Thane, bridal makeup portfolio, keratin treatment results, hair color gallery, salon portfolio Mumbai"
+        canonicalUrl="/gallery-portfolio"
+        ogImage="/la-coiffure-salon-logo.png"
+        ogType="website"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-20 lg:pt-24">
         <div className="container mx-auto px-6 lg:px-8 py-8">

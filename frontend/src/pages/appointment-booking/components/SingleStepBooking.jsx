@@ -4,6 +4,7 @@ import Header from '../../../components/ui/Header';
 import Button from '../../../components/ui/Button';
 import Input from '../../../components/ui/Input';
 import Icon from '../../../components/AppIcon';
+import SEOHead from '../../../components/SEOHead';
 import { sendBookingEmail } from '../../../services/emailService';
 
 const SingleStepBooking = () => {
@@ -508,8 +509,50 @@ const SingleStepBooking = () => {
     );
   }
 
+  // Structured data for booking page
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Book Appointment - La Coiffure Salon",
+    "description": "Book your hair and beauty appointment at La Coiffure Salon in Thane or Powai. Easy online booking for haircuts, coloring, treatments, and more.",
+    "url": "https://lacoiffuresalons.com/appointment-booking",
+    "mainEntity": {
+      "@type": "BeautySalon",
+      "name": "La Coiffure Salon",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Shop no.11&12, Saraswati School, Anand Nagar",
+          "addressLocality": "Thane West",
+          "addressRegion": "Maharashtra",
+          "postalCode": "400615",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "SN 161&162 floor 1st, galleriya, Hiranandani Gardens, Panchkutir Ganesh Nagar",
+          "addressLocality": "Powai",
+          "addressRegion": "Mumbai",
+          "postalCode": "400076",
+          "addressCountry": "IN"
+        }
+      ],
+      "telephone": ["+91 99670 02481", "+91 74000 68615"],
+      "openingHours": "Mo-Su 10:00-20:00"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Book Appointment | La Coiffure Salon Thane & Powai"
+        description="Book your hair and beauty appointment at La Coiffure Salon. Choose from Thane or Powai locations. Easy online booking for haircuts, coloring, keratin treatments, and beauty services."
+        keywords="book salon appointment, hair appointment Thane, beauty booking Powai, salon booking online, haircut appointment, hair color booking, keratin treatment appointment, bridal makeup booking"
+        canonicalUrl="/appointment-booking"
+        ogImage="/la-coiffure-salon-logo.png"
+        ogType="website"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-20 pb-16">
         <div className="container mx-auto px-6 lg:px-6 max-w-4xl">
