@@ -15,6 +15,8 @@
   <title>La Coiffure Salon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000000" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
   
   <!-- Critical CSS - Inline for fastest rendering -->
   <style>
@@ -149,9 +151,50 @@
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div class="dhiwise-code" id="root"></div>
+  <noscript>
+    <div style="padding: 2rem; text-align: center; font-family: Arial, sans-serif;">
+      <h1>La Coiffure Salon - Premium Hair & Beauty Services</h1>
+      <p>Professional hair styling, beauty treatments, and wellness services in Thane and Powai. Expert stylists, modern techniques, and luxury experience.</p>
+      <p>Please enable JavaScript to view our full website.</p>
+    </div>
+  </noscript>
+  <div class="dhiwise-code" id="root">
+    <!-- Fallback content for crawlers -->
+    <div style="display: none;" id="crawler-fallback">
+      <h1>La Coiffure Salon - Premium Hair & Beauty Services</h1>
+      <p>Professional hair styling, beauty treatments, and wellness services in Thane and Powai. Expert stylists, modern techniques, and luxury experience.</p>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Men's Haircut & Styling</li>
+        <li>Women's Haircut & Styling</li>
+        <li>Hair Coloring & Highlights</li>
+        <li>Keratin Treatments</li>
+        <li>Bridal Makeup</li>
+        <li>Facial Treatments</li>
+        <li>Hair Spa</li>
+        <li>Nail Care</li>
+      </ul>
+    </div>
+  </div>
   <script type="module" src="/src/index.jsx"></script>
+  
+  <!-- Crawler support script -->
+  <script>
+    // Make content visible to crawlers
+    if (navigator.userAgent.includes('Googlebot') || navigator.userAgent.includes('bingbot')) {
+      document.getElementById('crawler-fallback').style.display = 'block';
+    }
+    
+    // Hide fallback content when React loads
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const fallback = document.getElementById('crawler-fallback');
+        if (fallback) {
+          fallback.style.display = 'none';
+        }
+      }, 1000);
+    });
+  </script>
 </body>
 
 </html>
