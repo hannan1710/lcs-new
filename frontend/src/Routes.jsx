@@ -14,7 +14,6 @@ const AppointmentBooking = lazy(() => import('./pages/appointment-booking'));
 const ContactLocationPage = lazy(() => import('./pages/contact-location'));
 const ServicesCatalog = lazy(() => import('./pages/services-catalog'));
 const Dashboard = lazy(() => import('./pages/dashboard/Dashboard'));
-const AdminPanel = lazy(() => import('./pages/admin/AdminPanel'));
 
 // Enhanced page loader with better UX
 const PageLoader = () => (
@@ -91,12 +90,6 @@ const Routes = () => {
             </Suspense>
           } />
           
-          {/* Admin Panel */}
-          <Route path="/admin" element={
-            <Suspense fallback={<PageLoader />}>
-              <AdminPanel />
-            </Suspense>
-          } />
           
           {/* 404 */}
           <Route path="*" element={
