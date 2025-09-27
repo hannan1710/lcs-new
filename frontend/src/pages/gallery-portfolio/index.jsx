@@ -63,15 +63,16 @@ const GalleryPortfolio = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead
-        title="Gallery & Portfolio | Hair Transformations & Beauty Services"
-        description="Explore La Coiffure Salon's stunning portfolio featuring hair transformations, keratin treatments, bridal makeovers, and beauty services in Powai & Thane. See our expert work and book your appointment."
-        keywords="hair gallery Powai, hair portfolio Thane, hair transformations Powai, beauty gallery Thane, bridal makeup portfolio, keratin treatment results, hair color gallery, salon portfolio Mumbai"
-        canonicalUrl="/gallery-portfolio"
-        ogImage="/la-coiffure-salon-logo.png"
-        ogType="website"
-        structuredData={structuredData}
-      />
+     <SEOHead
+  title="La Coiffure Salon | Gallery & Portfolio - Hair Transformations & Beauty Services"
+  description="Discover La Coiffure Salon's portfolio of stunning hair transformations, keratin treatments, bridal makeovers, and luxury beauty services in Thane & Powai. View our expert work and book your appointment today."
+  keywords="la coiffure salon gallery, hair portfolio Powai, beauty portfolio Thane, hair transformations Mumbai, bridal makeup portfolio Powai, keratin treatment results Thane, hair color gallery, salon portfolio Thane Powai"
+  canonicalUrl="https://lacoiffuresalons.com/gallery-portfolio"
+  ogImage="https://lacoiffuresalons.com/la-coiffure-salon-logo.png"
+  ogType="website"
+  structuredData={structuredData}
+/>
+
       <Header />
       <main className="pt-20 lg:pt-24">
         <div className="container mx-auto px-6 lg:px-8 py-8">

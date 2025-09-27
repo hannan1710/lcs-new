@@ -72,15 +72,16 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead
-        title="About Us | La Coiffure Salon - Expert Stylists in Thane & Powai"
-        description="Meet the founders of La Coiffure Salon - Imran Salmani & Nizam Shaikh. Professionally qualified from VIDAL SASSOON UK & JEAN CLAUDE BIGUINE Paris. 15+ years experience in luxury hair & beauty services."
-        keywords="about La Coiffure Salon, Imran Salmani founder, Nizam Shaikh stylist, VIDAL SASSOON qualified, JEAN CLAUDE BIGUINE trained, luxury salon Thane, premium salon Powai, expert hair stylists Mumbai"
-        canonicalUrl="/about-us"
-        ogImage="/la-coiffure-salon-logo.png"
-        ogType="website"
-        structuredData={structuredData}
-      />
+   <SEOHead
+  title=" About La Coiffure Salon Thane & Powai  | Luxury Hair & Beauty Experts"
+  description="About La Coiffure Salon in Thane & Powai, led by founders Imran Salmani & Nizam Shaikh. Expertly trained at VIDAL SASSOON UK & JEAN CLAUDE BIGUINE Paris, they bring 20+ years of experience in luxury haircuts, styling, and professional beauty service."
+  keywords="La Coiffure Salon Thane, La Coiffure Salon Powai, Imran Salmani, Nizam Shaikh, luxury hair salon Mumbai, professional hair stylists Thane, expert haircuts Mumbai, VIDAL SASSOON UK trained stylist, JEAN CLAUDE BIGUINE Paris trained stylist, premium beauty services Mumbai"
+  canonicalUrl="https://lacoiffuresalons.com/about-us"
+  ogImage="https://lacoiffuresalons.com/la-coiffure-salon-logo.png"
+  ogType="website"
+  structuredData={structuredData}
+/>
+
       <Header />
 
       <main className="pt-20">

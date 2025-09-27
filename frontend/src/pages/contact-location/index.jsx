@@ -73,8 +73,8 @@ const ContactLocationPage = () => {
         title="Contact & Locations | La Coiffure Salon Thane & Powai"
         description="Visit La Coiffure Salon at our Thane and Powai locations. Find addresses, phone numbers, business hours, and directions to our luxury hair and beauty salons."
         keywords="La Coiffure Salon contact, salon Thane address, salon Powai location, hair salon Thane phone, beauty salon Powai hours, salon contact number, salon directions Mumbai"
-        canonicalUrl="/contact-location"
-        ogImage="/la-coiffure-salon-logo.png"
+        canonicalUrl="https://lacoiffuresalons.com/contact-location"
+        ogImage="https://lacoiffuresalons.com/la-coiffure-salon-logo.png"
         ogType="website"
         structuredData={structuredData}
       />
@@ -89,7 +89,7 @@ const ContactLocationPage = () => {
                 <Icon name="MapPin" size={24} className="text-accent" />
               </div>
               <h1 className="font-heading font-bold text-3xl lg:text-4xl text-yellow-500">
-                Visit La Coiffure
+                Visit La Coiffure 
               </h1>
             </div>
             
