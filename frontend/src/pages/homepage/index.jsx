@@ -101,7 +101,7 @@ const Homepage = () => {
   return (
     <div className="min-h-screen bg-background">
     <SEOHead
-  title="Best Hair Salon in Powai & Thane | La Coiffure Salon"
+  title=" La Coiffure Salon | Best Hair Salon in Powai & Thane "
   description="La Coiffure Salon offers premium haircuts, keratin treatments, hair coloring, bridal makeup, and beauty services in Powai & Thane. Expert stylists, luxury experience. Book now!"
   keywords="best salon Powai, best salon Thane, hair salon Mumbai, keratin treatment Powai, hair color Thane, bridal makeup Powai, beauty salon Mumbai, luxury salon"
   canonicalUrl="https://lacoiffuresalons.com/"

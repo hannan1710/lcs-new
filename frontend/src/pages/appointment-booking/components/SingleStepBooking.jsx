@@ -544,15 +544,16 @@ const SingleStepBooking = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead
-        title="Book Appointment | La Coiffure Salon Thane & Powai"
-        description="Book your hair and beauty appointment at La Coiffure Salon. Choose from Thane or Powai locations. Easy online booking for haircuts, coloring, keratin treatments, and beauty services."
-        keywords="book salon appointment, hair appointment Thane, beauty booking Powai, salon booking online, haircut appointment, hair color booking, keratin treatment appointment, bridal makeup booking"
-        canonicalUrl="/appointment-booking"
-        ogImage="/la-coiffure-salon-logo.png"
-        ogType="website"
-        structuredData={structuredData}
-      />
+   <SEOHead
+  title="La Coiffure Salon | Book Appointment Online - Thane & Powai"
+  description="Schedule your appointment at La Coiffure Salon in Thane or Powai. Book online for professional haircuts, coloring, keratin treatments, bridal makeup, and luxury beauty services."
+  keywords="la coiffure salon booking, book salon appointment online, hair appointment Thane, beauty booking Powai, haircut appointment, hair color booking, keratin treatment appointment, bridal makeup booking"
+  canonicalUrl="https://lacoiffuresalons.com/appointment-booking"
+  ogImage="https://lacoiffuresalons.com/la-coiffure-salon-logo.png"
+  ogType="website"
+  structuredData={structuredData}
+/>
+
       <Header />
       <main className="pt-20 pb-16">
         <div className="container mx-auto px-6 lg:px-6 max-w-4xl">

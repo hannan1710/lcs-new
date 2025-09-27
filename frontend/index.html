@@ -153,7 +153,7 @@
 <body>
   <noscript>
     <div style="padding: 2rem; text-align: center; font-family: Arial, sans-serif;">
-      <h1>La Coiffure Salon - Premium Hair & Beauty Services</h1>
+      <h1>La Coiffure Salon - Luxury Hair & Beauty Services</h1>
       <p>Professional hair styling, beauty treatments, and wellness services in Thane and Powai. Expert stylists, modern techniques, and luxury experience.</p>
       <p>Please enable JavaScript to view our full website.</p>
     </div>
@@ -161,7 +161,7 @@
   <div class="dhiwise-code" id="root">
     <!-- Fallback content for crawlers -->
     <div style="display: none;" id="crawler-fallback">
-      <h1>La Coiffure Salon - Premium Hair & Beauty Services</h1>
+      <h1>La Coiffure Salon - Luxury Hair & Beauty Services</h1>
       <p>Professional hair styling, beauty treatments, and wellness services in Thane and Powai. Expert stylists, modern techniques, and luxury experience.</p>
       <h2>Our Services</h2>
       <ul>
@@ -174,6 +174,40 @@
         <li>Hair Spa</li>
         <li>Nail Care</li>
       </ul>
+      
+      <!-- Services Catalog specific content for crawlers -->
+      <div id="services-catalog-fallback" style="display: none;">
+        <h1>La Coiffure Salon | Hair & Beauty Services in Thane & Powai</h1>
+        <p>Discover premium haircuts, coloring, keratin treatments, facials, bridal makeup, and spa services at La Coiffure Salon in Thane & Powai. Luxury care by expert stylists.</p>
+        
+        <h2>Professional Beauty Services in Thane and Powai</h2>
+        <p>La Coiffure Salon offers comprehensive beauty and wellness services including professional haircuts, hair coloring, highlights, spa treatments, facial services, manicure, pedicure, nail art, makeup services, hair texturizing, bleaching, waxing, and skincare treatments. Our expert stylists and beauty professionals provide personalized care and modern techniques at our premium salon locations in Thane and Powai, Maharashtra.</p>
+        
+        <h3>Our Service Categories</h3>
+        <ul>
+          <li><strong>Men's Haircut & Styling</strong>: Sharp, stylish men's haircuts tailored to your look.</li>
+          <li><strong>Women's Haircut & Styling</strong>: Transform your style with precision women's haircuts.</li>
+          <li><strong>Hair Coloring & Highlights</strong>: Vibrant, long-lasting hair color crafted by specialists.</li>
+          <li><strong>Professional Hair Highlighting</strong>: Add dimension with flawless highlights and balayage.</li>
+          <li><strong>Hair Spa & Treatments</strong>: Rejuvenating spa therapies for hair and scalp health.</li>
+          <li><strong>Hair Texturizing & Styling</strong>: Get silky smooth or voluminous textured hair.</li>
+          <li><strong>Facial Treatments & Skincare</strong>: Brighten and refresh your skin with premium facials.</li>
+          <li><strong>Hair Cleanup & Maintenance</strong>: Deep cleansing clean-ups for fresh, healthy skin.</li>
+          <li><strong>Manicure & Pedicure Services</strong>: Pamper your hands and feet with expert mani-pedi.</li>
+          <li><strong>Skincare & Beauty Treatments</strong>: Personalized skin solutions for radiant beauty.</li>
+          <li><strong>Hair Bleaching & Polishing</strong>: Get smooth, even-toned skin with polishing treatments.</li>
+          <li><strong>Hair Removal & Waxing</strong>: Gentle, precise waxing for silky smooth skin.</li>
+          <li><strong>Nail Care & Nail Art</strong>: Trendy nail designs and flawless finishing.</li>
+          <li><strong>Professional Makeup Services</strong>: Glamorous makeup looks for every occasion.</li>
+        </ul>
+        
+        <h3>Why Choose La Coiffure Salon?</h3>
+        <p>With years of experience in the beauty industry, our certified stylists and beauty experts provide personalized attention to each client. We use premium products and modern techniques to ensure the best results for all our services in Thane and Powai locations.</p>
+        
+        <h3>Our Locations</h3>
+        <p><strong>Thane Location:</strong> Saraswati School, Anand Nagar, Thane West, Maharashtra 400615</p>
+        <p><strong>Powai Location:</strong> Galleria, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076</p>
+      </div>
     </div>
   </div>
   <script type="module" src="/src/index.jsx"></script>
@@ -182,15 +216,31 @@
   <script>
     // Make content visible to crawlers
     if (navigator.userAgent.includes('Googlebot') || navigator.userAgent.includes('bingbot')) {
-      document.getElementById('crawler-fallback').style.display = 'block';
+      const fallback = document.getElementById('crawler-fallback');
+      const servicesFallback = document.getElementById('services-catalog-fallback');
+      
+      // Check if we're on the services catalog page
+      if (window.location.pathname === '/services-catalog' || window.location.pathname === '/services') {
+        if (servicesFallback) {
+          servicesFallback.style.display = 'block';
+        }
+      } else {
+        if (fallback) {
+          fallback.style.display = 'block';
+        }
+      }
     }
     
     // Hide fallback content when React loads
     window.addEventListener('load', function() {
       setTimeout(function() {
         const fallback = document.getElementById('crawler-fallback');
+        const servicesFallback = document.getElementById('services-catalog-fallback');
         if (fallback) {
           fallback.style.display = 'none';
+        }
+        if (servicesFallback) {
+          servicesFallback.style.display = 'none';
         }
       }, 1000);
     });

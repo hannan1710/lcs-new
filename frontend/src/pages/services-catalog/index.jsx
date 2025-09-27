@@ -10,6 +10,53 @@ import AppImage from '../../components/AppImage';
 const ServicesCatalog = () => {
   const navigate = useNavigate();
 
+  // Structured data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "La Coiffure Salon Services",
+    "description": "Premium hair and beauty services in Thane and Powai. Expert stylists, luxury treatments, and personalized care.",
+    "provider": {
+      "@type": "Organization",
+      "name": "La Coiffure Salon",
+      "url": "https://lacoiffuresalons.com",
+      "logo": "https://lacoiffuresalons.com/la-coiffure-salon-logo.png",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Saraswati School, Anand Nagar",
+          "addressLocality": "Thane West",
+          "addressRegion": "Maharashtra",
+          "postalCode": "400615",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Galleria, Hiranandani Gardens, Panchkutir Ganesh Nagar",
+          "addressLocality": "Powai, Mumbai",
+          "addressRegion": "Maharashtra",
+          "postalCode": "400076",
+          "addressCountry": "IN"
+        }
+      ]
+    },
+    "serviceType": "Hair and Beauty Services",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Thane"
+      },
+      {
+        "@type": "City", 
+        "name": "Powai"
+      }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "description": "Professional hair styling, beauty treatments, and wellness services"
+    }
+  };
+
   // Static categories in the specified order using local images from public directory
   const staticCategories = [
     {
@@ -150,10 +197,10 @@ const ServicesCatalog = () => {
   return (
 <div className="min-h-screen bg-background">
   <SEOHead 
-    title=" La Coiffure Salon | Hair & Beauty Services in Thane & Powai "
+    title="La Coiffure Salon | Hair & Beauty Services in Thane & Powai"
     description="Discover premium haircuts, coloring, keratin treatments, facials, bridal makeup, and spa services at La Coiffure Salon in Thane & Powai. Luxury care by expert stylists."
     keywords="hair salon Thane, beauty salon Powai, luxury salon Mumbai, keratin treatment Powai, hair highlights Thane, bridal makeup Powai, spa services Thane, professional salon Mumbai"
-    canonicalUrl="https://lacoiffuresalons.com/services-catalog"
+    canonicalUrl="/services-catalog"
     ogImage="https://lacoiffuresalons.com/la-coiffure-salon-logo.png"
     ogType="website"
     structuredData={structuredData}
@@ -175,6 +222,7 @@ const ServicesCatalog = () => {
              <div className="sr-only" aria-hidden="true">
                <h2>Professional Beauty Services in Thane and Powai</h2>
                <p>La Coiffure Salon offers comprehensive beauty and wellness services including professional haircuts, hair coloring, highlights, spa treatments, facial services, manicure, pedicure, nail art, makeup services, hair texturizing, bleaching, waxing, and skincare treatments. Our expert stylists and beauty professionals provide personalized care and modern techniques at our premium salon locations in Thane and Powai, Maharashtra.</p>
+               <h3>Our Service Categories</h3>
                <ul>
                  {staticCategories.map((service, index) => (
                    <li key={service.id}>
@@ -182,6 +230,8 @@ const ServicesCatalog = () => {
                    </li>
                  ))}
                </ul>
+               <h3>Why Choose La Coiffure Salon?</h3>
+               <p>With years of experience in the beauty industry, our certified stylists and beauty experts provide personalized attention to each client. We use premium products and modern techniques to ensure the best results for all our services in Thane and Powai locations.</p>
              </div>
            </div>
 
