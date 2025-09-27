@@ -1,0 +1,5 @@
+# Redirect /homepage to root
+/homepage / 301
+
+# Handle SPA routing - all other routes go to index.html
+/* /index.html 200

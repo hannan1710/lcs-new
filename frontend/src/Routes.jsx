@@ -34,8 +34,8 @@ const Routes = () => {
         <RouterRoutes>
           {/* Main Pages */}
           <Route path="/" element={<Homepage />} />
-          <Route path="/homepage" element={<Homepage />} />
           <Route path="/home" element={<Homepage />} />
+          <Route path="/homepage" element={<Navigate to="/" replace />} />
           <Route path="/appointment-booking" element={
             <Suspense fallback={<PageLoader />}>
               <AppointmentBooking />

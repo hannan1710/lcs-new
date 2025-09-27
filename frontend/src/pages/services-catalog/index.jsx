@@ -168,7 +168,7 @@ const ServicesCatalog = () => {
              Services Catalog
              </h1>
              <p className="text-muted-foreground text-base max-w-2xl mx-auto">
-             We offer a curated range of beauty and wellness services across specialized categories in Thane and Powai, delivered with expertise and premium care at our premium salon locations.
+             Experience a curated range of beauty and wellness services in Thane & Powai. Our expert stylists provide premium care across specialized categories at our luxury salon locations
              </p>
              
              {/* Hidden SEO Content - Important for search engines */}
